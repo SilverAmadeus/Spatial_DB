@@ -50,10 +50,10 @@ values(2,'ITURBIDE',45204,
 			)
 		)'
 	)
-)
+);
 
 --HIDALGO
-inset into COLONIA(COLONIA_ID, NOMBRE, HABITANTES, GEO)
+insert into COLONIA(COLONIA_ID, NOMBRE, HABITANTES, GEO)
 values(3,'HIDALGO',67309,
 	st_GeomFromText(
 		'POLYGON(
@@ -228,7 +228,7 @@ values(8,'ZARAGOZA',43409,
 
 
 --SUAREZ
-insert into SUAREZ(COLONIA_ID, NOMBRE, HABITANTES, GEO)
+insert into COLONIA(COLONIA_ID, NOMBRE, HABITANTES, GEO)
 values(9,'SUAREZ',38979,
 	st_GeomFromText(
 		'POLYGON(

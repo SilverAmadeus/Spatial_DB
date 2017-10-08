@@ -22,7 +22,7 @@ values(1,'AZUL',
 
 --LINEA AZUL
 insert into LINEA_METRO(LINEA_METRO_ID, NOMBRE, GEO)
-values(2,'CAFE'
+values(2,'CAFE',
 	st_GeomFromText(
 		'LINESTRING(
 			25.0125	11.9295,

@@ -5,7 +5,7 @@
 
 -- AV1
 
-INSERT INTO "AREA_VERDE"("AREA_VERDE_ID", "NOMBRE", geo)
+INSERT INTO AREA_VERDE(AREA_VERDE_ID, NOMBRE, geo)
 values(1, 'AV1', st_geomfromtext(
         'MULTIPOLYGON(
         (
@@ -22,7 +22,7 @@ values(1, 'AV1', st_geomfromtext(
 );
 -- AV2
 
-INSERT INTO "AREA_VERDE"("AREA_VERDE_ID", "NOMBRE", geo)
+INSERT INTO AREA_VERDE(AREA_VERDE_ID, NOMBRE, geo)
 values(2, 'AV2', st_geomfromtext(
         'MULTIPOLYGON(
         (
@@ -40,7 +40,7 @@ values(2, 'AV2', st_geomfromtext(
 
 -- AV3
 
-INSERT INTO "AREA_VERDE"("AREA_VERDE_ID", "NOMBRE", geo)
+INSERT INTO AREA_VERDE(AREA_VERDE_ID, NOMBRE, geo)
 values(3, 'AV3', st_geomfromtext(
         'MULTIPOLYGON(
         (
@@ -58,7 +58,7 @@ values(3, 'AV3', st_geomfromtext(
 
 -- AV4
 
-INSERT INTO "AREA_VERDE"("AREA_VERDE_ID", "NOMBRE", geo)
+INSERT INTO AREA_VERDE(AREA_VERDE_ID, NOMBRE, geo)
 values(4, 'AV4', st_geomfromtext(
         'MULTIPOLYGON(
         (
@@ -95,7 +95,7 @@ values(4, 'AV4', st_geomfromtext(
 
 -- AV5
 
-INSERT INTO "AREA_VERDE"("AREA_VERDE_ID", "NOMBRE", geo)
+INSERT INTO AREA_VERDE(AREA_VERDE_ID, NOMBRE, geo)
 values(5, 'AV5', st_geomfromtext(
         'MULTIPOLYGON(
         (
@@ -115,7 +115,7 @@ values(5, 'AV5', st_geomfromtext(
 
 -- AV6
 
-INSERT INTO "AREA_VERDE"("AREA_VERDE_ID", "NOMBRE", geo)
+INSERT INTO AREA_VERDE(AREA_VERDE_ID, NOMBRE, geo)
 values(6, 'AV6', st_geomfromtext(
         'MULTIPOLYGON(
         (
@@ -134,7 +134,7 @@ values(6, 'AV6', st_geomfromtext(
 
 -- AV7
 
-INSERT INTO "AREA_VERDE"("AREA_VERDE_ID", "NOMBRE", geo)
+INSERT INTO AREA_VERDE(AREA_VERDE_ID, NOMBRE, geo)
 values(7, 'AV7', st_geomfromtext(
         'MULTIPOLYGON(
         (
@@ -151,7 +151,7 @@ values(7, 'AV7', st_geomfromtext(
 
 -- AV8
 
-INSERT INTO "AREA_VERDE"("AREA_VERDE_ID", "NOMBRE", geo)
+INSERT INTO AREA_VERDE(AREA_VERDE_ID, NOMBRE, geo)
 values(8, 'AV8', st_geomfromtext(
         'MULTIPOLYGON(
         (
@@ -171,7 +171,7 @@ values(8, 'AV8', st_geomfromtext(
 
 -- AV9
 
-INSERT INTO "AREA_VERDE"("AREA_VERDE_ID", "NOMBRE", geo)
+INSERT INTO AREA_VERDE(AREA_VERDE_ID, NOMBRE, geo)
 values(9, 'AV9', st_geomfromtext(
         'MULTIPOLYGON(
         (

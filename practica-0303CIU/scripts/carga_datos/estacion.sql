@@ -1,7 +1,7 @@
 --CF1
 insert into ESTACION(ESTACION_ID, NOMBRE, GEO)
 values(1,'CF1',st_GeomFromText('POINT(25.0125 11.9295)'));
-
+-----
 --C1
 insert into ESTACION(ESTACION_ID, NOMBRE, GEO)
 values(2,'C1',st_GeomFromText('POINT(21	11)'));
