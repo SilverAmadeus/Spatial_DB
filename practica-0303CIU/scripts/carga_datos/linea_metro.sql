@@ -39,7 +39,7 @@ values(2,'CAFE',
 	)
 );
 
---LINEA CAFE 
+--LINEA CAFE
 insert into LINEA_METRO(LINEA_METRO_ID, NOMBRE, GEO)
 values(3,'MORADA',
 	st_GeomFromText(
@@ -72,5 +72,3 @@ values(4,'ROJA',
 		)'
 	)
 );
-
-
