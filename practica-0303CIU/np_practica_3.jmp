@@ -6,12 +6,848 @@
       <value class="java.lang.String">/home/alanrods/Documents/noveno/espaciales/practicas/practica-0303CIU/np_practica_3.jmp</value>
     </mapping>
   </properties>
-  <windowLocation X="5" Y="5" />
-  <windowSize width="1234" height="639" />
-  <windowZoom left="-2.6621911037891257" right="28.57833607907743" bottom="-0.6749999999999999" top="18.675" />
+  <windowLocation X="5" Y="0" />
+  <windowSize width="1234" height="615" />
+  <windowZoom left="0.5761589837246524" right="31.345586555259995" bottom="0.20182080427594284" top="18.79101901588745" />
   <maximized>false</maximized>
   <layers>
     <category name="Working">
+      <layer class="com.vividsolutions.jump.workbench.model.Layer" name="Q11_2" visible="false" editable="false" selectable="true" read-only="false" drawnLast="false" synchronizedLineColor="true">
+        <scaleDependentRendering enabled="false">
+          <minScale null="true" />
+          <maxScale null="true" />
+        </scaleDependentRendering>
+        <description />
+        <data-source-query>
+          <query>select 'R2'as nombre,
+    st_envelope(st_makebox2d(
+        'POINT(15 15)'::geometry,
+        'POINT(27 27)'::geometry
+      )
+    ) as geo</query>
+          <data-source class="com.vividsolutions.jump.workbench.ui.plugin.datastore.DataStoreQueryDataSource">
+            <properties class="java.util.HashMap">
+              <mapping>
+                <key class="java.lang.String">SQL Query</key>
+                <value class="java.lang.String">select 'R2'as nombre,
+    st_envelope(st_makebox2d(
+        'POINT(15 15)'::geometry,
+        'POINT(27 27)'::geometry
+      )
+    ) as geo</value>
+              </mapping>
+              <mapping>
+                <key class="java.lang.String">Connection Descriptor</key>
+                <value class="com.vividsolutions.jump.workbench.datastore.ConnectionDescriptor">
+                  <name>conexion-local</name>
+                  <dataStoreDriverClassName>com.vividsolutions.jump.datastore.postgis.PostgisDataStoreDriver</dataStoreDriverClassName>
+                  <parameterList>
+                    <schema>
+                      <name>Server</name>
+                      <name>Port</name>
+                      <name>Database</name>
+                      <name>User</name>
+                      <name>Password</name>
+                      <class>java.lang.String</class>
+                      <class>java.lang.Integer</class>
+                      <class>java.lang.String</class>
+                      <class>java.lang.String</class>
+                      <class>java.lang.String</class>
+                    </schema>
+                    <nameToValueMap class="java.util.HashMap">
+                      <mapping>
+                        <key class="java.lang.String">User</key>
+                        <value class="java.lang.String">espaciales</value>
+                      </mapping>
+                      <mapping>
+                        <key class="java.lang.String">Port</key>
+                        <value class="java.lang.Integer">5432</value>
+                      </mapping>
+                      <mapping>
+                        <key class="java.lang.String">Database</key>
+                        <value class="java.lang.String">espaciales</value>
+                      </mapping>
+                      <mapping>
+                        <key class="java.lang.String">Password</key>
+                        <value class="java.lang.String">fwdhaHrGtwjGbwMGFwtH</value>
+                      </mapping>
+                      <mapping>
+                        <key class="java.lang.String">Server</key>
+                        <value class="java.lang.String">localhost</value>
+                      </mapping>
+                    </nameToValueMap>
+                  </parameterList>
+                </value>
+              </mapping>
+              <mapping>
+                <key class="java.lang.String">Dataset Name</key>
+                <value class="java.lang.String">Q11_2</value>
+              </mapping>
+            </properties>
+          </data-source>
+        </data-source-query>
+        <styles>
+          <style class="org.openjump.core.ccordsys.srid.SRIDStyle" enabled="true" srid="0" />
+          <style class="com.vividsolutions.jump.workbench.ui.renderer.style.BasicStyle" enabled="true">
+            <fill enabled="true">
+              <pattern class="com.vividsolutions.jump.workbench.ui.renderer.style.WKTFillPattern" enabled="false">
+                <properties>
+                  <properties>
+                    <mapping>
+                      <key class="java.lang.String">EXTENT</key>
+                      <value class="java.lang.Integer">6</value>
+                    </mapping>
+                    <mapping>
+                      <key class="java.lang.String">PATTERN WKT</key>
+                      <value class="java.lang.String">GEOMETRYCOLLECTION(POINT EMPTY, MULTILINESTRING ((-8.485281374238571 2.8284271247461894, 2.8284271247461907 -8.48528137423857), (-5.656854249492381 5.65685424949238, 5.656854249492381 -5.65685424949238), (-2.8284271247461907 8.48528137423857, 8.485281374238571 -2.8284271247461894)))</value>
+                    </mapping>
+                    <mapping>
+                      <key class="java.lang.String">COLOR</key>
+                      <value class="java.awt.Color">204, 204, 255, 150</value>
+                    </mapping>
+                    <mapping>
+                      <key class="java.lang.String">LINE WIDTH</key>
+                      <value class="java.lang.Integer">2</value>
+                    </mapping>
+                  </properties>
+                </properties>
+              </pattern>
+              <color>204, 204, 255, 255</color>
+            </fill>
+            <line enabled="true" width="1">
+              <pattern enabled="false">3</pattern>
+              <color>142, 142, 178, 255</color>
+            </line>
+            <alpha>150</alpha>
+          </style>
+          <style class="com.vividsolutions.jump.workbench.ui.renderer.style.SquareVertexStyle" enabled="false" size="4" filling="true" />
+          <style class="com.vividsolutions.jump.workbench.ui.renderer.style.ColorThemingStyle" enabled="false" global-transparency-enabled="true" global-line-width-enabled="true" vertex-style-enabled="false">
+            <attribute-name>nombre</attribute-name>
+            <default-style enabled="true">
+              <fill enabled="true">
+                <pattern null="true" enabled="false" />
+                <color>204, 204, 255, 150</color>
+              </fill>
+              <line enabled="true" width="1">
+                <pattern enabled="false">3</pattern>
+                <color>142, 142, 178, 255</color>
+              </line>
+              <alpha>150</alpha>
+              <vertex-style class="com.vividsolutions.jump.workbench.ui.renderer.style.SquareVertexStyle" enabled="false" size="4" filling="true" />
+            </default-style>
+            <attribute-value-to-style-map class="java.util.TreeMap" />
+            <attribute-value-to-label-map class="java.util.TreeMap" />
+          </style>
+          <style class="com.vividsolutions.jump.workbench.ui.renderer.style.LabelStyle" enabled="true">
+            <color>0, 0, 0, 255</color>
+            <attribute>nombre</attribute>
+            <angleAttribute />
+            <heightAttribute />
+            <font>Dialog, 0, 12</font>
+            <height>12.0</height>
+            <verticalAlignment>DEFAULT</verticalAlignment>
+            <scaled>false</scaled>
+            <overlappingLabelsHidden>true</overlappingLabelsHidden>
+            <outlineShowing>false</outlineShowing>
+            <outlineColor>230, 230, 230, 192</outlineColor>
+            <outlineWidth>4.0</outlineWidth>
+            <hideAtScale>false</hideAtScale>
+            <scaleToHideAt>20000.0</scaleToHideAt>
+            <horizontalAlignment>0</horizontalAlignment>
+            <horizontalPosition>CENTER</horizontalPosition>
+          </style>
+        </styles>
+        <feature-schema-operation>NULL</feature-schema-operation>
+        <feature-schema-operation>NULL</feature-schema-operation>
+      </layer>
+      <layer class="com.vividsolutions.jump.workbench.model.Layer" name="Q11_1" visible="false" editable="false" selectable="true" read-only="false" drawnLast="false" synchronizedLineColor="true">
+        <scaleDependentRendering enabled="false">
+          <minScale null="true" />
+          <maxScale null="true" />
+        </scaleDependentRendering>
+        <description />
+        <data-source-query>
+          <query>select 'R1'as nombre,
+    st_envelope(st_makebox2d(
+        'POINT(6 6)'::geometry,
+        'POINT(14 14)'::geometry
+      )
+    ) as geo</query>
+          <data-source class="com.vividsolutions.jump.workbench.ui.plugin.datastore.DataStoreQueryDataSource">
+            <properties class="java.util.HashMap">
+              <mapping>
+                <key class="java.lang.String">SQL Query</key>
+                <value class="java.lang.String">select 'R1'as nombre,
+    st_envelope(st_makebox2d(
+        'POINT(6 6)'::geometry,
+        'POINT(14 14)'::geometry
+      )
+    ) as geo</value>
+              </mapping>
+              <mapping>
+                <key class="java.lang.String">Connection Descriptor</key>
+                <value class="com.vividsolutions.jump.workbench.datastore.ConnectionDescriptor">
+                  <name>conexion-local</name>
+                  <dataStoreDriverClassName>com.vividsolutions.jump.datastore.postgis.PostgisDataStoreDriver</dataStoreDriverClassName>
+                  <parameterList>
+                    <schema>
+                      <name>Server</name>
+                      <name>Port</name>
+                      <name>Database</name>
+                      <name>User</name>
+                      <name>Password</name>
+                      <class>java.lang.String</class>
+                      <class>java.lang.Integer</class>
+                      <class>java.lang.String</class>
+                      <class>java.lang.String</class>
+                      <class>java.lang.String</class>
+                    </schema>
+                    <nameToValueMap class="java.util.HashMap">
+                      <mapping>
+                        <key class="java.lang.String">User</key>
+                        <value class="java.lang.String">espaciales</value>
+                      </mapping>
+                      <mapping>
+                        <key class="java.lang.String">Port</key>
+                        <value class="java.lang.Integer">5432</value>
+                      </mapping>
+                      <mapping>
+                        <key class="java.lang.String">Database</key>
+                        <value class="java.lang.String">espaciales</value>
+                      </mapping>
+                      <mapping>
+                        <key class="java.lang.String">Password</key>
+                        <value class="java.lang.String">VWdxAXbgdgjWRW2wfgtH</value>
+                      </mapping>
+                      <mapping>
+                        <key class="java.lang.String">Server</key>
+                        <value class="java.lang.String">localhost</value>
+                      </mapping>
+                    </nameToValueMap>
+                  </parameterList>
+                </value>
+              </mapping>
+              <mapping>
+                <key class="java.lang.String">Dataset Name</key>
+                <value class="java.lang.String">Q11_1</value>
+              </mapping>
+            </properties>
+          </data-source>
+        </data-source-query>
+        <styles>
+          <style class="org.openjump.core.ccordsys.srid.SRIDStyle" enabled="true" srid="0" />
+          <style class="com.vividsolutions.jump.workbench.ui.renderer.style.BasicStyle" enabled="true">
+            <fill enabled="true">
+              <pattern class="com.vividsolutions.jump.workbench.ui.renderer.style.WKTFillPattern" enabled="false">
+                <properties>
+                  <properties>
+                    <mapping>
+                      <key class="java.lang.String">EXTENT</key>
+                      <value class="java.lang.Integer">6</value>
+                    </mapping>
+                    <mapping>
+                      <key class="java.lang.String">PATTERN WKT</key>
+                      <value class="java.lang.String">GEOMETRYCOLLECTION(POINT EMPTY, MULTILINESTRING ((-8.485281374238571 2.8284271247461894, 2.8284271247461907 -8.48528137423857), (-5.656854249492381 5.65685424949238, 5.656854249492381 -5.65685424949238), (-2.8284271247461907 8.48528137423857, 8.485281374238571 -2.8284271247461894)))</value>
+                    </mapping>
+                    <mapping>
+                      <key class="java.lang.String">COLOR</key>
+                      <value class="java.awt.Color">255, 192, 0, 150</value>
+                    </mapping>
+                    <mapping>
+                      <key class="java.lang.String">LINE WIDTH</key>
+                      <value class="java.lang.Integer">2</value>
+                    </mapping>
+                  </properties>
+                </properties>
+              </pattern>
+              <color>255, 192, 0, 255</color>
+            </fill>
+            <line enabled="true" width="1">
+              <pattern enabled="false">3</pattern>
+              <color>178, 134, 0, 255</color>
+            </line>
+            <alpha>150</alpha>
+          </style>
+          <style class="com.vividsolutions.jump.workbench.ui.renderer.style.SquareVertexStyle" enabled="false" size="4" filling="true" />
+          <style class="com.vividsolutions.jump.workbench.ui.renderer.style.ColorThemingStyle" enabled="false" global-transparency-enabled="true" global-line-width-enabled="true" vertex-style-enabled="false">
+            <attribute-name>nombre</attribute-name>
+            <default-style enabled="true">
+              <fill enabled="true">
+                <pattern null="true" enabled="false" />
+                <color>255, 192, 0, 150</color>
+              </fill>
+              <line enabled="true" width="1">
+                <pattern enabled="false">3</pattern>
+                <color>178, 134, 0, 255</color>
+              </line>
+              <alpha>150</alpha>
+              <vertex-style class="com.vividsolutions.jump.workbench.ui.renderer.style.SquareVertexStyle" enabled="false" size="4" filling="true" />
+            </default-style>
+            <attribute-value-to-style-map class="java.util.TreeMap" />
+            <attribute-value-to-label-map class="java.util.TreeMap" />
+          </style>
+          <style class="com.vividsolutions.jump.workbench.ui.renderer.style.LabelStyle" enabled="true">
+            <color>0, 0, 0, 255</color>
+            <attribute>nombre</attribute>
+            <angleAttribute />
+            <heightAttribute />
+            <font>Dialog, 0, 12</font>
+            <height>12.0</height>
+            <verticalAlignment>DEFAULT</verticalAlignment>
+            <scaled>false</scaled>
+            <overlappingLabelsHidden>true</overlappingLabelsHidden>
+            <outlineShowing>false</outlineShowing>
+            <outlineColor>230, 230, 230, 192</outlineColor>
+            <outlineWidth>4.0</outlineWidth>
+            <hideAtScale>false</hideAtScale>
+            <scaleToHideAt>20000.0</scaleToHideAt>
+            <horizontalAlignment>0</horizontalAlignment>
+            <horizontalPosition>CENTER</horizontalPosition>
+          </style>
+        </styles>
+        <feature-schema-operation>NULL</feature-schema-operation>
+        <feature-schema-operation>NULL</feature-schema-operation>
+      </layer>
+      <layer class="com.vividsolutions.jump.workbench.model.Layer" name="Q9" visible="false" editable="false" selectable="true" read-only="false" drawnLast="false" synchronizedLineColor="true">
+        <scaleDependentRendering enabled="false">
+          <minScale null="true" />
+          <maxScale null="true" />
+        </scaleDependentRendering>
+        <description />
+        <data-source-query>
+          <query>select av.geo
+from practica3.area_verde av
+where av.nombre = 'AV4';</query>
+          <data-source class="com.vividsolutions.jump.workbench.ui.plugin.datastore.DataStoreQueryDataSource">
+            <properties class="java.util.HashMap">
+              <mapping>
+                <key class="java.lang.String">SQL Query</key>
+                <value class="java.lang.String">select av.geo
+from practica3.area_verde av
+where av.nombre = 'AV4';</value>
+              </mapping>
+              <mapping>
+                <key class="java.lang.String">Connection Descriptor</key>
+                <value class="com.vividsolutions.jump.workbench.datastore.ConnectionDescriptor">
+                  <name>conexion-local</name>
+                  <dataStoreDriverClassName>com.vividsolutions.jump.datastore.postgis.PostgisDataStoreDriver</dataStoreDriverClassName>
+                  <parameterList>
+                    <schema>
+                      <name>Server</name>
+                      <name>Port</name>
+                      <name>Database</name>
+                      <name>User</name>
+                      <name>Password</name>
+                      <class>java.lang.String</class>
+                      <class>java.lang.Integer</class>
+                      <class>java.lang.String</class>
+                      <class>java.lang.String</class>
+                      <class>java.lang.String</class>
+                    </schema>
+                    <nameToValueMap class="java.util.HashMap">
+                      <mapping>
+                        <key class="java.lang.String">User</key>
+                        <value class="java.lang.String">espaciales</value>
+                      </mapping>
+                      <mapping>
+                        <key class="java.lang.String">Port</key>
+                        <value class="java.lang.Integer">5432</value>
+                      </mapping>
+                      <mapping>
+                        <key class="java.lang.String">Database</key>
+                        <value class="java.lang.String">espaciales</value>
+                      </mapping>
+                      <mapping>
+                        <key class="java.lang.String">Password</key>
+                        <value class="java.lang.String">FWThqxbwdGzWBGMgFwTX</value>
+                      </mapping>
+                      <mapping>
+                        <key class="java.lang.String">Server</key>
+                        <value class="java.lang.String">localhost</value>
+                      </mapping>
+                    </nameToValueMap>
+                  </parameterList>
+                </value>
+              </mapping>
+              <mapping>
+                <key class="java.lang.String">Dataset Name</key>
+                <value class="java.lang.String">Q9</value>
+              </mapping>
+            </properties>
+          </data-source>
+        </data-source-query>
+        <styles>
+          <style class="com.vividsolutions.jump.workbench.ui.renderer.style.BasicStyle" enabled="true">
+            <fill enabled="true">
+              <pattern null="true" enabled="false" />
+              <color>255, 255, 51, 255</color>
+            </fill>
+            <line enabled="true" width="1">
+              <pattern enabled="false">3</pattern>
+              <color>178, 178, 35, 255</color>
+            </line>
+            <alpha>150</alpha>
+          </style>
+          <style class="com.vividsolutions.jump.workbench.ui.renderer.style.SquareVertexStyle" enabled="false" size="4" filling="true" />
+          <style class="com.vividsolutions.jump.workbench.ui.renderer.style.LabelStyle" enabled="false">
+            <color>0, 0, 0, 255</color>
+            <attribute>$FID</attribute>
+            <angleAttribute />
+            <heightAttribute />
+            <font>Dialog, 0, 12</font>
+            <height>12.0</height>
+            <verticalAlignment>DEFAULT</verticalAlignment>
+            <scaled>false</scaled>
+            <overlappingLabelsHidden>true</overlappingLabelsHidden>
+            <outlineShowing>false</outlineShowing>
+            <outlineColor>230, 230, 230, 192</outlineColor>
+            <outlineWidth>4.0</outlineWidth>
+            <hideAtScale>false</hideAtScale>
+            <scaleToHideAt>20000.0</scaleToHideAt>
+            <horizontalAlignment>0</horizontalAlignment>
+            <horizontalPosition>CENTER</horizontalPosition>
+          </style>
+          <style class="com.vividsolutions.jump.workbench.ui.renderer.style.ColorThemingStyle" enabled="false" global-transparency-enabled="true" global-line-width-enabled="true" vertex-style-enabled="false">
+            <attribute-name null="true" />
+            <default-style enabled="true">
+              <fill enabled="true">
+                <pattern null="true" enabled="false" />
+                <color>192, 192, 192, 255</color>
+              </fill>
+              <line enabled="true" width="1">
+                <pattern enabled="false">3</pattern>
+                <color>134, 134, 134, 255</color>
+              </line>
+              <alpha>255</alpha>
+              <vertex-style class="com.vividsolutions.jump.workbench.ui.renderer.style.SquareVertexStyle" enabled="false" size="4" filling="true" />
+            </default-style>
+            <attribute-value-to-style-map class="java.util.HashMap" />
+            <attribute-value-to-label-map class="java.util.HashMap" />
+          </style>
+          <style class="org.openjump.core.ccordsys.srid.SRIDStyle" enabled="true" srid="0" />
+        </styles>
+        <feature-schema-operation>NULL</feature-schema-operation>
+      </layer>
+      <layer class="com.vividsolutions.jump.workbench.model.Layer" name="Q3_3" visible="false" editable="false" selectable="true" read-only="false" drawnLast="false" synchronizedLineColor="true">
+        <scaleDependentRendering enabled="false">
+          <minScale null="true" />
+          <maxScale null="true" />
+        </scaleDependentRendering>
+        <description />
+        <data-source-query>
+          <query>with q1 as(
+	select st_buffer(e.geo, 1) as geo 
+	from practica3.estacion e
+	where e.nombre='AM1')
+select (q2.dump).geom, q2.nombre
+from (
+	select st_dump(geo) as dump , nombre, tipo 
+	from practica3.centro_interes
+	)q2
+join q1
+on st_DWithin(q1.geo,(q2.dump).geom,3)</query>
+          <data-source class="com.vividsolutions.jump.workbench.ui.plugin.datastore.DataStoreQueryDataSource">
+            <properties class="java.util.HashMap">
+              <mapping>
+                <key class="java.lang.String">SQL Query</key>
+                <value class="java.lang.String">with q1 as(
+	select st_buffer(e.geo, 1) as geo 
+	from practica3.estacion e
+	where e.nombre='AM1')
+select (q2.dump).geom, q2.nombre
+from (
+	select st_dump(geo) as dump , nombre, tipo 
+	from practica3.centro_interes
+	)q2
+join q1
+on st_DWithin(q1.geo,(q2.dump).geom,3)</value>
+              </mapping>
+              <mapping>
+                <key class="java.lang.String">Connection Descriptor</key>
+                <value class="com.vividsolutions.jump.workbench.datastore.ConnectionDescriptor">
+                  <name>conexion-local</name>
+                  <dataStoreDriverClassName>com.vividsolutions.jump.datastore.postgis.PostgisDataStoreDriver</dataStoreDriverClassName>
+                  <parameterList>
+                    <schema>
+                      <name>Server</name>
+                      <name>Port</name>
+                      <name>Database</name>
+                      <name>User</name>
+                      <name>Password</name>
+                      <class>java.lang.String</class>
+                      <class>java.lang.Integer</class>
+                      <class>java.lang.String</class>
+                      <class>java.lang.String</class>
+                      <class>java.lang.String</class>
+                    </schema>
+                    <nameToValueMap class="java.util.HashMap">
+                      <mapping>
+                        <key class="java.lang.String">User</key>
+                        <value class="java.lang.String">espaciales</value>
+                      </mapping>
+                      <mapping>
+                        <key class="java.lang.String">Port</key>
+                        <value class="java.lang.Integer">5432</value>
+                      </mapping>
+                      <mapping>
+                        <key class="java.lang.String">Database</key>
+                        <value class="java.lang.String">espaciales</value>
+                      </mapping>
+                      <mapping>
+                        <key class="java.lang.String">Password</key>
+                        <value class="java.lang.String">vgthAHRWtWZgbgmgfgDX</value>
+                      </mapping>
+                      <mapping>
+                        <key class="java.lang.String">Server</key>
+                        <value class="java.lang.String">localhost</value>
+                      </mapping>
+                    </nameToValueMap>
+                  </parameterList>
+                </value>
+              </mapping>
+              <mapping>
+                <key class="java.lang.String">Dataset Name</key>
+                <value class="java.lang.String">Q3_3 (2)</value>
+              </mapping>
+            </properties>
+          </data-source>
+        </data-source-query>
+        <styles>
+          <style class="org.openjump.core.ccordsys.srid.SRIDStyle" enabled="true" srid="0" />
+          <style class="com.vividsolutions.jump.workbench.ui.renderer.style.BasicStyle" enabled="true">
+            <fill enabled="true">
+              <pattern class="com.vividsolutions.jump.workbench.ui.renderer.style.WKTFillPattern" enabled="false">
+                <properties>
+                  <properties>
+                    <mapping>
+                      <key class="java.lang.String">EXTENT</key>
+                      <value class="java.lang.Integer">6</value>
+                    </mapping>
+                    <mapping>
+                      <key class="java.lang.String">PATTERN WKT</key>
+                      <value class="java.lang.String">GEOMETRYCOLLECTION(POINT EMPTY, MULTILINESTRING ((-8.485281374238571 2.8284271247461894, 2.8284271247461907 -8.48528137423857), (-5.656854249492381 5.65685424949238, 5.656854249492381 -5.65685424949238), (-2.8284271247461907 8.48528137423857, 8.485281374238571 -2.8284271247461894)))</value>
+                    </mapping>
+                    <mapping>
+                      <key class="java.lang.String">COLOR</key>
+                      <value class="java.awt.Color">255, 127, 0, 150</value>
+                    </mapping>
+                    <mapping>
+                      <key class="java.lang.String">LINE WIDTH</key>
+                      <value class="java.lang.Integer">2</value>
+                    </mapping>
+                  </properties>
+                </properties>
+              </pattern>
+              <color>255, 127, 0, 255</color>
+            </fill>
+            <line enabled="true" width="1">
+              <pattern enabled="false">3</pattern>
+              <color>178, 88, 0, 255</color>
+            </line>
+            <alpha>150</alpha>
+          </style>
+          <style class="com.vividsolutions.jump.workbench.ui.renderer.style.SquareVertexStyle" enabled="false" size="4" filling="true" />
+          <style class="com.vividsolutions.jump.workbench.ui.renderer.style.ColorThemingStyle" enabled="false" global-transparency-enabled="true" global-line-width-enabled="true" vertex-style-enabled="false">
+            <attribute-name>nombre</attribute-name>
+            <default-style enabled="true">
+              <fill enabled="true">
+                <pattern null="true" enabled="false" />
+                <color>255, 127, 0, 150</color>
+              </fill>
+              <line enabled="true" width="1">
+                <pattern enabled="false">3</pattern>
+                <color>178, 88, 0, 255</color>
+              </line>
+              <alpha>150</alpha>
+              <vertex-style class="com.vividsolutions.jump.workbench.ui.renderer.style.SquareVertexStyle" enabled="false" size="4" filling="true" />
+            </default-style>
+            <attribute-value-to-style-map class="java.util.TreeMap" />
+            <attribute-value-to-label-map class="java.util.TreeMap" />
+          </style>
+          <style class="com.vividsolutions.jump.workbench.ui.renderer.style.LabelStyle" enabled="true">
+            <color>0, 0, 0, 255</color>
+            <attribute>nombre</attribute>
+            <angleAttribute />
+            <heightAttribute />
+            <font>Dialog, 0, 12</font>
+            <height>12.0</height>
+            <verticalAlignment>DEFAULT</verticalAlignment>
+            <scaled>false</scaled>
+            <overlappingLabelsHidden>true</overlappingLabelsHidden>
+            <outlineShowing>false</outlineShowing>
+            <outlineColor>230, 230, 230, 192</outlineColor>
+            <outlineWidth>4.0</outlineWidth>
+            <hideAtScale>false</hideAtScale>
+            <scaleToHideAt>20000.0</scaleToHideAt>
+            <horizontalAlignment>0</horizontalAlignment>
+            <horizontalPosition>CENTER</horizontalPosition>
+          </style>
+        </styles>
+        <feature-schema-operation>NULL</feature-schema-operation>
+        <feature-schema-operation>NULL</feature-schema-operation>
+      </layer>
+      <layer class="com.vividsolutions.jump.workbench.model.Layer" name="Q3_2" visible="false" editable="false" selectable="true" read-only="false" drawnLast="false" synchronizedLineColor="true">
+        <scaleDependentRendering enabled="false">
+          <minScale null="true" />
+          <maxScale null="true" />
+        </scaleDependentRendering>
+        <description />
+        <data-source-query>
+          <query>select av.geo, av.nombre
+from practica3.area_verde av
+where av.nombre='AV9';</query>
+          <data-source class="com.vividsolutions.jump.workbench.ui.plugin.datastore.DataStoreQueryDataSource">
+            <properties class="java.util.HashMap">
+              <mapping>
+                <key class="java.lang.String">SQL Query</key>
+                <value class="java.lang.String">select av.geo, av.nombre
+from practica3.area_verde av
+where av.nombre='AV9';</value>
+              </mapping>
+              <mapping>
+                <key class="java.lang.String">Connection Descriptor</key>
+                <value class="com.vividsolutions.jump.workbench.datastore.ConnectionDescriptor">
+                  <name>conexion-local</name>
+                  <dataStoreDriverClassName>com.vividsolutions.jump.datastore.postgis.PostgisDataStoreDriver</dataStoreDriverClassName>
+                  <parameterList>
+                    <schema>
+                      <name>Server</name>
+                      <name>Port</name>
+                      <name>Database</name>
+                      <name>User</name>
+                      <name>Password</name>
+                      <class>java.lang.String</class>
+                      <class>java.lang.Integer</class>
+                      <class>java.lang.String</class>
+                      <class>java.lang.String</class>
+                      <class>java.lang.String</class>
+                    </schema>
+                    <nameToValueMap class="java.util.HashMap">
+                      <mapping>
+                        <key class="java.lang.String">User</key>
+                        <value class="java.lang.String">espaciales</value>
+                      </mapping>
+                      <mapping>
+                        <key class="java.lang.String">Port</key>
+                        <value class="java.lang.Integer">5432</value>
+                      </mapping>
+                      <mapping>
+                        <key class="java.lang.String">Database</key>
+                        <value class="java.lang.String">espaciales</value>
+                      </mapping>
+                      <mapping>
+                        <key class="java.lang.String">Password</key>
+                        <value class="java.lang.String">vWTHqxbgTGJgbGMWFWDH</value>
+                      </mapping>
+                      <mapping>
+                        <key class="java.lang.String">Server</key>
+                        <value class="java.lang.String">localhost</value>
+                      </mapping>
+                    </nameToValueMap>
+                  </parameterList>
+                </value>
+              </mapping>
+              <mapping>
+                <key class="java.lang.String">Dataset Name</key>
+                <value class="java.lang.String">Q3_1 (3)</value>
+              </mapping>
+            </properties>
+          </data-source>
+        </data-source-query>
+        <styles>
+          <style class="org.openjump.core.ccordsys.srid.SRIDStyle" enabled="true" srid="0" />
+          <style class="com.vividsolutions.jump.workbench.ui.renderer.style.BasicStyle" enabled="true">
+            <fill enabled="true">
+              <pattern class="com.vividsolutions.jump.workbench.ui.renderer.style.WKTFillPattern" enabled="false">
+                <properties>
+                  <properties>
+                    <mapping>
+                      <key class="java.lang.String">EXTENT</key>
+                      <value class="java.lang.Integer">6</value>
+                    </mapping>
+                    <mapping>
+                      <key class="java.lang.String">PATTERN WKT</key>
+                      <value class="java.lang.String">GEOMETRYCOLLECTION(POINT EMPTY, MULTILINESTRING ((-8.485281374238571 2.8284271247461894, 2.8284271247461907 -8.48528137423857), (-5.656854249492381 5.65685424949238, 5.656854249492381 -5.65685424949238), (-2.8284271247461907 8.48528137423857, 8.485281374238571 -2.8284271247461894)))</value>
+                    </mapping>
+                    <mapping>
+                      <key class="java.lang.String">COLOR</key>
+                      <value class="java.awt.Color">0, 180, 180, 150</value>
+                    </mapping>
+                    <mapping>
+                      <key class="java.lang.String">LINE WIDTH</key>
+                      <value class="java.lang.Integer">2</value>
+                    </mapping>
+                  </properties>
+                </properties>
+              </pattern>
+              <color>0, 180, 180, 255</color>
+            </fill>
+            <line enabled="true" width="1">
+              <pattern enabled="false">3</pattern>
+              <color>0, 125, 125, 255</color>
+            </line>
+            <alpha>150</alpha>
+          </style>
+          <style class="com.vividsolutions.jump.workbench.ui.renderer.style.SquareVertexStyle" enabled="false" size="4" filling="true" />
+          <style class="com.vividsolutions.jump.workbench.ui.renderer.style.ColorThemingStyle" enabled="false" global-transparency-enabled="true" global-line-width-enabled="true" vertex-style-enabled="false">
+            <attribute-name>nombre</attribute-name>
+            <default-style enabled="true">
+              <fill enabled="true">
+                <pattern null="true" enabled="false" />
+                <color>0, 180, 180, 150</color>
+              </fill>
+              <line enabled="true" width="1">
+                <pattern enabled="false">3</pattern>
+                <color>0, 125, 125, 255</color>
+              </line>
+              <alpha>150</alpha>
+              <vertex-style class="com.vividsolutions.jump.workbench.ui.renderer.style.SquareVertexStyle" enabled="false" size="4" filling="true" />
+            </default-style>
+            <attribute-value-to-style-map class="java.util.TreeMap" />
+            <attribute-value-to-label-map class="java.util.TreeMap" />
+          </style>
+          <style class="com.vividsolutions.jump.workbench.ui.renderer.style.LabelStyle" enabled="true">
+            <color>0, 0, 0, 255</color>
+            <attribute>nombre</attribute>
+            <angleAttribute />
+            <heightAttribute />
+            <font>Dialog, 0, 12</font>
+            <height>12.0</height>
+            <verticalAlignment>DEFAULT</verticalAlignment>
+            <scaled>false</scaled>
+            <overlappingLabelsHidden>true</overlappingLabelsHidden>
+            <outlineShowing>false</outlineShowing>
+            <outlineColor>230, 230, 230, 192</outlineColor>
+            <outlineWidth>4.0</outlineWidth>
+            <hideAtScale>false</hideAtScale>
+            <scaleToHideAt>20000.0</scaleToHideAt>
+            <horizontalAlignment>0</horizontalAlignment>
+            <horizontalPosition>CENTER</horizontalPosition>
+          </style>
+        </styles>
+        <feature-schema-operation>NULL</feature-schema-operation>
+        <feature-schema-operation>NULL</feature-schema-operation>
+      </layer>
+      <layer class="com.vividsolutions.jump.workbench.model.Layer" name="Q3_1" visible="false" editable="false" selectable="true" read-only="false" drawnLast="false" synchronizedLineColor="true">
+        <scaleDependentRendering enabled="false">
+          <minScale null="true" />
+          <maxScale null="true" />
+        </scaleDependentRendering>
+        <description />
+        <data-source-query>
+          <query>select st_buffer(e.geo, 1)
+from practica3.estacion e
+where e.nombre='AM1';</query>
+          <data-source class="com.vividsolutions.jump.workbench.ui.plugin.datastore.DataStoreQueryDataSource">
+            <properties class="java.util.HashMap">
+              <mapping>
+                <key class="java.lang.String">SQL Query</key>
+                <value class="java.lang.String">select st_buffer(e.geo, 1)
+from practica3.estacion e
+where e.nombre='AM1';</value>
+              </mapping>
+              <mapping>
+                <key class="java.lang.String">Connection Descriptor</key>
+                <value class="com.vividsolutions.jump.workbench.datastore.ConnectionDescriptor">
+                  <name>conexion-local</name>
+                  <dataStoreDriverClassName>com.vividsolutions.jump.datastore.postgis.PostgisDataStoreDriver</dataStoreDriverClassName>
+                  <parameterList>
+                    <schema>
+                      <name>Server</name>
+                      <name>Port</name>
+                      <name>Database</name>
+                      <name>User</name>
+                      <name>Password</name>
+                      <class>java.lang.String</class>
+                      <class>java.lang.Integer</class>
+                      <class>java.lang.String</class>
+                      <class>java.lang.String</class>
+                      <class>java.lang.String</class>
+                    </schema>
+                    <nameToValueMap class="java.util.HashMap">
+                      <mapping>
+                        <key class="java.lang.String">User</key>
+                        <value class="java.lang.String">espaciales</value>
+                      </mapping>
+                      <mapping>
+                        <key class="java.lang.String">Port</key>
+                        <value class="java.lang.Integer">5432</value>
+                      </mapping>
+                      <mapping>
+                        <key class="java.lang.String">Database</key>
+                        <value class="java.lang.String">espaciales</value>
+                      </mapping>
+                      <mapping>
+                        <key class="java.lang.String">Password</key>
+                        <value class="java.lang.String">VwdHqHbgdWZWRWMgFgtx</value>
+                      </mapping>
+                      <mapping>
+                        <key class="java.lang.String">Server</key>
+                        <value class="java.lang.String">localhost</value>
+                      </mapping>
+                    </nameToValueMap>
+                  </parameterList>
+                </value>
+              </mapping>
+              <mapping>
+                <key class="java.lang.String">Dataset Name</key>
+                <value class="java.lang.String">Q3_1</value>
+              </mapping>
+            </properties>
+          </data-source>
+        </data-source-query>
+        <styles>
+          <style class="com.vividsolutions.jump.workbench.ui.renderer.style.BasicStyle" enabled="true">
+            <fill enabled="true">
+              <pattern null="true" enabled="false" />
+              <color>0, 180, 0, 255</color>
+            </fill>
+            <line enabled="true" width="1">
+              <pattern enabled="false">3</pattern>
+              <color>0, 125, 0, 255</color>
+            </line>
+            <alpha>150</alpha>
+          </style>
+          <style class="com.vividsolutions.jump.workbench.ui.renderer.style.SquareVertexStyle" enabled="false" size="4" filling="true" />
+          <style class="com.vividsolutions.jump.workbench.ui.renderer.style.LabelStyle" enabled="false">
+            <color>0, 0, 0, 255</color>
+            <attribute>$FID</attribute>
+            <angleAttribute />
+            <heightAttribute />
+            <font>Dialog, 0, 12</font>
+            <height>12.0</height>
+            <verticalAlignment>DEFAULT</verticalAlignment>
+            <scaled>false</scaled>
+            <overlappingLabelsHidden>true</overlappingLabelsHidden>
+            <outlineShowing>false</outlineShowing>
+            <outlineColor>230, 230, 230, 192</outlineColor>
+            <outlineWidth>4.0</outlineWidth>
+            <hideAtScale>false</hideAtScale>
+            <scaleToHideAt>20000.0</scaleToHideAt>
+            <horizontalAlignment>0</horizontalAlignment>
+            <horizontalPosition>CENTER</horizontalPosition>
+          </style>
+          <style class="com.vividsolutions.jump.workbench.ui.renderer.style.ColorThemingStyle" enabled="false" global-transparency-enabled="true" global-line-width-enabled="true" vertex-style-enabled="false">
+            <attribute-name null="true" />
+            <default-style enabled="true">
+              <fill enabled="true">
+                <pattern null="true" enabled="false" />
+                <color>192, 192, 192, 255</color>
+              </fill>
+              <line enabled="true" width="1">
+                <pattern enabled="false">3</pattern>
+                <color>134, 134, 134, 255</color>
+              </line>
+              <alpha>255</alpha>
+              <vertex-style class="com.vividsolutions.jump.workbench.ui.renderer.style.SquareVertexStyle" enabled="false" size="4" filling="true" />
+            </default-style>
+            <attribute-value-to-style-map class="java.util.HashMap" />
+            <attribute-value-to-label-map class="java.util.HashMap" />
+          </style>
+          <style class="org.openjump.core.ccordsys.srid.SRIDStyle" enabled="true" srid="0" />
+        </styles>
+        <feature-schema-operation>NULL</feature-schema-operation>
+      </layer>
       <layer class="com.vividsolutions.jump.workbench.model.Layer" name="practica3.linea_ferrea" visible="false" editable="false" selectable="true" read-only="false" drawnLast="false" synchronizedLineColor="true">
         <scaleDependentRendering enabled="false">
           <minScale null="true" />
@@ -59,7 +895,7 @@
                       </mapping>
                       <mapping>
                         <key class="java.lang.String">Password</key>
-                        <value class="java.lang.String">VgtXAHRgtWZgRWMwvWTH</value>
+                        <value class="java.lang.String">vgTxAHbWDWzGbg2wfgDh</value>
                       </mapping>
                       <mapping>
                         <key class="java.lang.String">Server</key>
@@ -153,14 +989,13 @@
                     </properties>
                   </properties>
                 </pattern>
-                <color>51, 255, 0, 150</color>
+                <color>51, 255, 0, 255</color>
               </fill>
               <line enabled="true" width="1">
                 <pattern enabled="false">3</pattern>
                 <color>35, 178, 0, 255</color>
               </line>
               <alpha>150</alpha>
-              <vertex-style class="com.vividsolutions.jump.workbench.ui.renderer.style.SquareVertexStyle" enabled="false" size="4" filling="true" />
             </default-style>
             <attribute-value-to-style-map class="java.util.TreeMap" />
             <attribute-value-to-label-map class="java.util.TreeMap" />
@@ -235,7 +1070,7 @@
                       </mapping>
                       <mapping>
                         <key class="java.lang.String">Password</key>
-                        <value class="java.lang.String">fgThaHbwTWzwBw2GvwTH</value>
+                        <value class="java.lang.String">FWdXAHbwtWZGBwMgvgDH</value>
                       </mapping>
                       <mapping>
                         <key class="java.lang.String">Server</key>
@@ -329,14 +1164,13 @@
                     </properties>
                   </properties>
                 </pattern>
-                <color>255, 153, 0, 150</color>
+                <color>255, 153, 0, 255</color>
               </fill>
               <line enabled="true" width="1">
                 <pattern enabled="false">3</pattern>
                 <color>178, 107, 0, 255</color>
               </line>
               <alpha>150</alpha>
-              <vertex-style class="com.vividsolutions.jump.workbench.ui.renderer.style.SquareVertexStyle" enabled="false" size="4" filling="true" />
             </default-style>
             <attribute-value-to-style-map class="java.util.TreeMap" />
             <attribute-value-to-label-map class="java.util.TreeMap" />
@@ -411,7 +1245,7 @@
                       </mapping>
                       <mapping>
                         <key class="java.lang.String">Password</key>
-                        <value class="java.lang.String">VgTXaxRgdGJGRG2GfGtX</value>
+                        <value class="java.lang.String">VwthaxBwTWzgbGMwfwtx</value>
                       </mapping>
                       <mapping>
                         <key class="java.lang.String">Server</key>
@@ -505,14 +1339,13 @@
                     </properties>
                   </properties>
                 </pattern>
-                <color>204, 204, 255, 150</color>
+                <color>204, 204, 255, 255</color>
               </fill>
               <line enabled="true" width="1">
                 <pattern enabled="false">3</pattern>
                 <color>142, 142, 178, 255</color>
               </line>
               <alpha>150</alpha>
-              <vertex-style class="com.vividsolutions.jump.workbench.ui.renderer.style.SquareVertexStyle" enabled="false" size="4" filling="true" />
             </default-style>
             <attribute-value-to-style-map class="java.util.TreeMap" />
             <attribute-value-to-label-map class="java.util.TreeMap" />
@@ -587,7 +1420,7 @@
                       </mapping>
                       <mapping>
                         <key class="java.lang.String">Password</key>
-                        <value class="java.lang.String">vGtxaxBwDWZgBGMGvgDh</value>
+                        <value class="java.lang.String">FwTxQxBwdWjGrWmgvwDX</value>
                       </mapping>
                       <mapping>
                         <key class="java.lang.String">Server</key>
@@ -681,14 +1514,13 @@
                     </properties>
                   </properties>
                 </pattern>
-                <color>255, 255, 51, 150</color>
+                <color>255, 255, 51, 255</color>
               </fill>
               <line enabled="true" width="1">
                 <pattern enabled="false">3</pattern>
                 <color>178, 178, 35, 255</color>
               </line>
               <alpha>150</alpha>
-              <vertex-style class="com.vividsolutions.jump.workbench.ui.renderer.style.SquareVertexStyle" enabled="false" size="4" filling="true" />
             </default-style>
             <attribute-value-to-style-map class="java.util.TreeMap" />
             <attribute-value-to-label-map class="java.util.TreeMap" />
@@ -717,7 +1549,7 @@
         <feature-schema-operation>NULL</feature-schema-operation>
         <feature-schema-operation>NULL</feature-schema-operation>
       </layer>
-      <layer class="com.vividsolutions.jump.workbench.model.Layer" name="practica3.area_verde" visible="false" editable="false" selectable="true" read-only="false" drawnLast="false" synchronizedLineColor="true">
+      <layer class="com.vividsolutions.jump.workbench.model.Layer" name="practica3.area_verde" visible="true" editable="false" selectable="true" read-only="false" drawnLast="false" synchronizedLineColor="true">
         <scaleDependentRendering enabled="false">
           <minScale null="true" />
           <maxScale null="true" />
@@ -764,7 +1596,7 @@
                       </mapping>
                       <mapping>
                         <key class="java.lang.String">Password</key>
-                        <value class="java.lang.String">FGDxaXBGdgjwBW2GFGtx</value>
+                        <value class="java.lang.String">fWtXAXrwDGZWbWmWvwth</value>
                       </mapping>
                       <mapping>
                         <key class="java.lang.String">Server</key>
@@ -858,14 +1690,13 @@
                     </properties>
                   </properties>
                 </pattern>
-                <color>0, 255, 255, 150</color>
+                <color>0, 255, 255, 255</color>
               </fill>
               <line enabled="true" width="1">
                 <pattern enabled="false">3</pattern>
                 <color>0, 178, 178, 255</color>
               </line>
               <alpha>150</alpha>
-              <vertex-style class="com.vividsolutions.jump.workbench.ui.renderer.style.SquareVertexStyle" enabled="false" size="4" filling="true" />
             </default-style>
             <attribute-value-to-style-map class="java.util.TreeMap" />
             <attribute-value-to-label-map class="java.util.TreeMap" />
@@ -893,7 +1724,7 @@
         <feature-schema-operation>NULL</feature-schema-operation>
         <feature-schema-operation>NULL</feature-schema-operation>
       </layer>
-      <layer class="com.vividsolutions.jump.workbench.model.Layer" name="practica3.colonia" visible="false" editable="false" selectable="true" read-only="false" drawnLast="false" synchronizedLineColor="true">
+      <layer class="com.vividsolutions.jump.workbench.model.Layer" name="practica3.colonia" visible="true" editable="false" selectable="true" read-only="false" drawnLast="false" synchronizedLineColor="true">
         <scaleDependentRendering enabled="false">
           <minScale null="true" />
           <maxScale null="true" />
@@ -940,7 +1771,7 @@
                       </mapping>
                       <mapping>
                         <key class="java.lang.String">Password</key>
-                        <value class="java.lang.String">FWThQXBwTgJWBWmGVwTX</value>
+                        <value class="java.lang.String">fwdHAHbgdGZGrw2WFWdX</value>
                       </mapping>
                       <mapping>
                         <key class="java.lang.String">Server</key>
@@ -1034,14 +1865,13 @@
                     </properties>
                   </properties>
                 </pattern>
-                <color>255, 0, 0, 150</color>
+                <color>255, 0, 0, 255</color>
               </fill>
               <line enabled="true" width="1">
                 <pattern enabled="false">3</pattern>
                 <color>178, 0, 0, 255</color>
               </line>
               <alpha>150</alpha>
-              <vertex-style class="com.vividsolutions.jump.workbench.ui.renderer.style.SquareVertexStyle" enabled="false" size="4" filling="true" />
             </default-style>
             <attribute-value-to-style-map class="java.util.TreeMap" />
             <attribute-value-to-label-map class="java.util.TreeMap" />

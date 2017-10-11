@@ -16,6 +16,9 @@ group by c.nombre;
 4;"ZAPATA"
 4;"ZARAGOZA"
 
+
+---No consideran las que pertenecen a la ferrea
+--La linea del metro contiene a la estacion
 select count(*), c.nombre
 from colonia c
 join estacion e
@@ -28,13 +31,13 @@ group by c.nombre;
 2;"AGUIRRE"
 4;"ALLENDE"
 3;"CARRANZA"
-11;"CENTRO"
-3;"HIDALGO"
+--11;"CENTRO"
+--3;"HIDALGO"
 1;"ITURBIDE"
 3;"JUAREZ"
 1;"MONTES"
 2;"MORELOS"
 3;"SUAREZ"
-3;"VILLA"
+--3;"VILLA"
 4;"ZAPATA"
 2;"ZARAGOZA"
