@@ -21,14 +21,15 @@ group by c.nombre;
 --La linea del metro contiene a la estacion
 
 -- Corregido
-select count(*), c.nombre as COLONIA
+select count(*) as numero, c.nombre as COLONIA
 from colonia c join estacion e
 on st_covers(c.geo, e.geo)
 join (select st_union(geo) as geo_u from linea_metro) lm
 on st_covers(lm.geo_u, e.geo)
-group by c.nombre;
+group by c.nombre
+order by c.nombre;
 
- count |  colonia  
+ count |  colonia
 -------+----------
      2 | AGUIRRE
      4 | ALLENDE
@@ -43,9 +44,3 @@ group by c.nombre;
      2 | VILLA
      4 | ZAPATA
      2 | ZARAGOZA
-
-
-
-
-
-

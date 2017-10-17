@@ -65,5 +65,3 @@ where q1.nombre = 'R2';
 
 "CENTRO";   "UNIVERSIDAD";   "R1"
 "HISTORIA"; "MUSEO";         "R1"
-
-
