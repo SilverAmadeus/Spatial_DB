@@ -28,10 +28,10 @@ join q2
 on st_covers(q1.geo,(q2.dump).geom)
 where q1.nombre = 'R2';
 
-
+--ST_CONTAINS
 -------------------------------------------------
-"CENTRO";"CAMPAMENTO MILITAR";"R1"
+--"CENTRO";"CAMPAMENTO MILITAR";"R1"
 "CENTRO";"UNIVERSIDAD";"R1"
-"ARTE";"MUSEO";"R2"
+--"ARTE";"MUSEO";"R2"
 "HISTORIA";"MUSEO";"R1"
-"SUR";"HOSPITAL";"R1"
+--"SUR";"HOSPITAL";"R1"

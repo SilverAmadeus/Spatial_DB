@@ -6,7 +6,7 @@ from
   from area_verde av
   where av.nombre = 'AV4')q1;
 
-
+--ST_PERIMETER
 -----------------------------------------------------
 1;9.75009902893913
 2;3.89114
