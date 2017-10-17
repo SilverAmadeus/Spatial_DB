@@ -10,8 +10,9 @@ select st_dump(geo) as dump, nombre
 where c.nombre = 'CENTRO';
 
 -----------------------------------------
-"MORELOS";"SOL-B";"POINT(18.0141 4.03995)"
-"VILLA";"SOL-A";"POINT(7.99217 14.9965)"
+"MORELOS";	"SOL-B";	"POINT(18.0141 4.03995)"
+"VILLA";	"SOL-A";	"POINT(7.99217 14.9965)"
+								5.87, 2.96 	
 
 --No hace DUMP
 --Tienen que ser 3 puntos
