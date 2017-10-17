@@ -16,6 +16,6 @@ where c.nombre = 'CENTRO';
 
 --No hace DUMP
 --Tienen que ser 3 puntos
-
+-- Checar
 
 HIDALGO; SOL-B 5.84 2.96

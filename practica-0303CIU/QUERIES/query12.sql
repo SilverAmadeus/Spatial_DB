@@ -1,4 +1,4 @@
-select e.nombre, st_asText(e.geo), lm.nombre, lm1.nombre
+select e.nombre, st_asText(e.geo) as UBICACION, lm.nombre as LINEA_ORIGEN, lm1.nombre as LINEA_DESTINO
 from linea_metro lm
 join linea_metro lm1
 on st_crosses(lm.geo,lm1.geo)
