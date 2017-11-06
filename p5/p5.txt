@@ -1,19 +1,19 @@
 begin%practica5%
  //ZONA DE RECEPCION 
  zonaGeo(id, x, y):-id=1, y>=0, y<=3, x>=0, x<=25.
- zonaResp(id, nombre, responsable, t):-id=1, nombre="RECEPCION", responsable="JUAN LARA", t>=2000, t<2006.
- zonaResp(id, nombre, responsable, t):-id=1, nombre="RECEPCION", responsable="EVA LUNA", t>=2006, t<=2013.
+ zonaResp(id, nombre, responsable, t):-id=1, nombre="RECEPCION", responsable="JUAN_LARA", t>=2000, t<2006.
+ zonaResp(id, nombre, responsable, t):-id=1, nombre="RECEPCION", responsable="EVA_LUNA", t>=2006, t<=2013.
 
 //ZONA SELVATICA
  zonaGeo(id, x, y):-id=2, y>=3, y<=10, x>=0, x<=25.
- zonaResp(id, nombre, responsable, t):-id=2, nombre="SELVATICA", responsable="JORGE PEREZ", t>=2000, t<2004.
- zonaResp(id, nombre, responsable, t):-id=2, nombre="SELVATICA", responsable="JUAN AGUILA", t>=2004, t<2007.
- zonaResp(id, nombre, responsable, t):-id=2, nombre="SELVATICA", responsable="HUGO PAZ", t>=2007, t<=2013.
+ zonaResp(id, nombre, responsable, t):-id=2, nombre="SELVATICA", responsable="JORGE_PEREZ", t>=2000, t<2004.
+ zonaResp(id, nombre, responsable, t):-id=2, nombre="SELVATICA", responsable="JUAN_AGUILA", t>=2004, t<2007.
+ zonaResp(id, nombre, responsable, t):-id=2, nombre="SELVATICA", responsable="HUGO_PAZ", t>=2007, t<=2013.
 
 //ZONA TEMPLADA
  zonaGeo(id, x, y):-id=3, y>=10, y<=17, x>=0, x<=25.
- zonaResp(id, nombre, responsable, t):-id=3, nombre="TEMPLADA", responsable="YADIRA LUGO", t>=2000, t<2008.
- zonaResp(id, nombre, responsable, t):-id=3, nombre="TEMPLADA", responsable="JULIO ACOSTA", t>=2008, t<=2013.
+ zonaResp(id, nombre, responsable, t):-id=3, nombre="TEMPLADA", responsable="YADIRA_LUGO", t>=2000, t<2008.
+ zonaResp(id, nombre, responsable, t):-id=3, nombre="TEMPLADA", responsable="JULIO_ACOSTA", t>=2008, t<=2013.
 
 //SECCION AVES
  seccGeo(id, x, y):- id=1, y-3x<=-7, x>=4, x<=6, y>=0.
