@@ -1,11 +1,11 @@
 begin %basic%
 
-CREATE_VIEW consulta3
+CREATE_VIEW query_3
 
-SELECT segG.x, segG.y
+SELECT sGeo.x, sGeo.y
 
-FROM segmGeo as segG, segmNombre as segN, zonaResp as zr, zonaGeo as z
+FROM segmNombre as s, segmGeo as sGeo, zonaResp as z,  zonaGeo as zGeo 
 
-WHERE segG.id=segN.id, zr.id=z.id, segG.x=z.x, segG.y=z.y, segN.nombre="AMARILLO", zr.nombre="SELVATICA"
+WHERE s.id=sGeo.id, z.id=zGeo.id, sGeo.x=zGeo.x, sGeo.y=zGeo.y, z.nombre="RECEPCION"
 
 end %basic%

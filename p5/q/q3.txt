@@ -6,6 +6,6 @@ SELECT sGeo.x, sGeo.y
 
 FROM segmNombre as s, segmGeo as sGeo, zonaResp as z,  zonaGeo as zGeo 
 
-WHERE s.id=sGeo.id, z.id=zGeo.id, sGeo.x=zGeo.x, sGeo.y=zGeo.y, z.nombre="RECEPCION"
+WHERE s.id=sGeo.id, z.id=zGeo.id, sGeo.x=zGeo.x, sGeo.y=zGeo.y, z.nombre="RECEPCION", z.nombre="AMARILLO"
 
 end %basic%
