@@ -4,12 +4,16 @@ CREATE_VIEW query_8
 
 SELECT1 v.clave, v.animal, v.poblacion
 
+FROM1 vistaNombre as v, vistaGeo as vGeo, zonaResp as z, zonaResp as zGeo
 
+WHERE1 v.id=vGeo.id, z.id=zGeo.id, vGeo.x=zGeo.x, vGeo.y=zGeo.y, v.t=2002, z.nombre="RECEPCION"
 
 INTUNION UNION
 
 SELECT2 v.clave, v.animal, v.poblacion
 
+FROM2 vistaNombre as v, vistaGeo as vGeo, seccNombre as s, seccGeo as sGeo
 
+WHERE2 v.id=vGeo.id, s.id=sGeo.id, vGeo.x=sGeo.x, vGeo.y=sGeo.y, v.t=2002, vGeo.t=2004, s.nombre="FELINOS"
 
 end %SET%
