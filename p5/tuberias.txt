@@ -1,0 +1,15 @@
+begin%practic5%
+//TUBERIAS
+tuberiaGeo(id, x, y):-id=1, y=14, x>=2, x<=10.
+tuberiaGeo(id, x, y):-id=1, y=-0.40x+18, x>=10, x<=14.
+tuberiaGeo(id, x, y):-id=1, y=-2.5x+198, x>=10, x<=14.
+tuberiaGeo(id, x, y):-id=1, y=x-10,x>=15, x<=17.
+tuberiaGeo(id, x, y):-id=1, y=-0.066x+12.66, x>=17, x<=20.
+tuberia(id, nombre):-id=1, nombre="SEGMENTO AZUL".
+
+tuberiaGeo(id, x, y):-id=2, x=2, y>=0, y<=4.
+tuberiaGeo(id, x, y):-id=2, x>=2, x<=11, y=4.
+tuberiaGeo(id, x, y):-id=2, x>=2, x<=12, y=x+2.
+tuberiaGeo(id, x, y):-id=2, x>=12, x<=19, y=14.
+tuberia(id, nombre):-id=2, nombre="SEGMENTO AMARILLO".
+
