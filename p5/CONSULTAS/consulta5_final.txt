@@ -1,0 +1,11 @@
+begin %basic%
+
+CREATE_VIEW query_5_75
+
+SELECT v.clave, v.animal, v.poblacion
+
+FROM vistaGeo as vGeo, vistaNombre as v, max_amarillo_1 as max_y
+
+WHERE vGeo.id = v.id, sGeo.id = s.id, vGeo.y>=max_y.sGeo_y, vGeo.t = 2000,v.t=2001
+
+end %basic%

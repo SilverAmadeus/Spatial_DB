@@ -1,0 +1,3 @@
+begin %TEMPHAVE%
+avg_15(animales, promedio):- avg_15_forHaving(animales, promedio), promedio > 15.
+end %TEMPHAVE%

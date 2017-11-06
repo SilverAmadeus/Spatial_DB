@@ -1,0 +1,7 @@
+begin%agg%
+
+avg_15_forHaving(animales, promedio):- animales="PUMA",promedio=8.0000.
+avg_15_forHaving(animales, promedio):- animales="TUCAN",promedio=6.0000.
+avg_15_forHaving(animales, promedio):- animales="AVESTRUZ",promedio=20.0000.
+avg_15_forHaving(animales, promedio):- animales="PAVOREAL",promedio=7.0000.
+end%agg%

@@ -1,0 +1,15 @@
+begin %AGGREG%
+
+CREATE_VIEW max_amarillo_1
+
+SELECT max(sGeo.y)
+
+FROM segmGeo as sGeo, segmNombre as s
+
+WHERE sGeo.id = s.id, s.nombre = "AMARILLO"
+
+GROUP 
+
+HAVING 
+
+end %AGGREG%

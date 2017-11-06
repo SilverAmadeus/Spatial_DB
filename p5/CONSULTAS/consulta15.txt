@@ -1,0 +1,15 @@
+begin %AGGREG%
+
+CREATE_VIEW avg_15(animales, promedio)
+
+SELECT v.animal, avg(v.poblacion)
+
+FROM vistaNombre as v, vistaGeo as vg, seccGeo as sg, seccNombre as s
+
+WHERE v.id=vg.id,  sg.id=s.id,  vg.x=sg.x, vg.y=sg.y,  s.nombre="AVES", v.t = 2001
+
+GROUP v.animal
+
+HAVING promedio>15
+
+end %AGGREG%

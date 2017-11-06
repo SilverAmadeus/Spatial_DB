@@ -1,0 +1,3 @@
+begin%temp%
+TmpAgg2(max(vpoblacion)):- TmpAgg(vpoblacion).
+end%temp%

@@ -1,0 +1,19 @@
+begin %SET%
+
+CREATE_VIEW union_av_1_4
+
+SELECT1 avGeo.x, avGeo.y
+
+FROM1 areaVerdeGeo as avGeo, areaVerdeNombre as av
+
+WHERE1 av.id = avGeo.id, av.nombre="V1"
+
+INTUNION UNION
+
+SELECT2 avGeo.x, avGeo.y
+
+FROM2 areaVerdeGeo as avGeo, areaVerdeNombre as av
+
+WHERE2 av.id = avGeo.id, av.nombre="V4"
+
+end %SET%

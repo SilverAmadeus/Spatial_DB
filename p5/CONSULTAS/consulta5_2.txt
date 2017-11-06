@@ -1,0 +1,11 @@
+begin %basic%
+
+CREATE_VIEW query_5_2
+
+SELECT v.nombre, v.animal, v.poblacion
+
+FROM vistaGeo as vGeo, vistaNombre as v, segmGeo as sGeo, segmNombre as s
+
+WHERE vGeo.id = v.id,       sGeo.id = s.id,      vGeo.y>=sGeo.y,      vGeo.t = 2000,   v.t=2001
+
+end %basic%

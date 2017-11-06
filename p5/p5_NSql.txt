@@ -1,0 +1,19 @@
+begin %NEST%
+
+CREATE_VIEW q11
+
+SELECT1 s.nombre,v.poblacion, v.animal
+
+FROM1 seccGeo as sGeo, seccNombre as s, vistaGeo as vgeo, vistaNombre as v
+
+WHERE1 sGeo.id = s.id, vgeo.id=v.id, vgeo.y=sGeo.y, vgeo.x=sGeo.x, v.poblacion
+
+OPERATOR >= all
+
+SELECT2 v.poblacion
+
+FROM2 vistaGeo as vgeo, vistaNombre as v
+
+WHERE2 vgeo.id=v.id 
+
+end %NEST%

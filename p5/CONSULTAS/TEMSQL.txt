@@ -1,3 +1,3 @@
 begin %TEMPSQL%
-consulta3(segG_x, segG_y) :- segmGeo(segG_id,segG_x,segG_y), segmNombre(segN_id,segN_nombre), zonaResp(zr_id,zr_nombre,zr_responsable,zr_t), zonaGeo(z_id,z_x,z_y), segG_id-segN_id=0, zr_id-z_id=0, segG_x-z_x=0, segG_y-z_y=0, segN_nombre="AMARILLO", zr_nombre="SELVATICA". 
+TmpAgg(animales, promedio) :- vistaNombre(v_id,v_clave,animales,promedio,v_t), vistaGeo(vg_id,vg_x,vg_y,vg_t), seccGeo(sg_id,sg_x,sg_y), seccNombre(s_id,s_nombre), v_id-vg_id=0, sg_id-s_id=0, vg_x-sg_x=0, vg_y-sg_y=0, s_nombre="AVES", v_t=2001. 
 end %TEMPSQL%

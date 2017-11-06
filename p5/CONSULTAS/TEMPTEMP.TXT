@@ -1,0 +1,4 @@
+begin%Temp%
+max_y(MAX(evalfunction)) :-query_5_1(v_nombre, v_animal, v_poblacion),
+sGeo.y- evalfunction =-14.
+end%Temp%

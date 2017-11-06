@@ -1,0 +1,38 @@
+begin%union_av_1_4%
+
+union_av_1_4(avGeo_x, avGeo_y) :- 
+-avGeo_x<=-1, 
+avGeo_x<=2, 
+-avGeo_y<=-12, 
+avGeo_y<=16.
+
+
+union_av_1_4(avGeo_x, avGeo_y) :- 
+avGeo_x+avGeo_y<=16, 
+-avGeo_x<=-2, 
+avGeo_x<=4, 
+-avGeo_y<=-12.
+
+
+union_av_1_4(avGeo_x, avGeo_y) :- 
+avGeo_x-avGeo_y<=-12, 
+-avGeo_x<=-2, 
+avGeo_x<=4, 
+avGeo_y<=16.
+
+
+union_av_1_4(avGeo_x, avGeo_y) :- 
+-avGeo_x<=-20, 
+avGeo_x<=22, 
+-avGeo_y<=-12, 
+avGeo_y<=16.
+
+
+union_av_1_4(avGeo_x, avGeo_y) :- 
+-avGeo_x<=-19, 
+avGeo_x<=23, 
+-avGeo_y<=-13, 
+avGeo_y<=15.
+
+
+end%union_av_1_4%

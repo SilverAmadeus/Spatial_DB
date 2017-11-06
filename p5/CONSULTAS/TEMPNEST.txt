@@ -1,0 +1,3 @@
+begin %TEMPNEST%
+q11(s_nombre,v_poblacion, v_animal) :- seccGeo(sGeo_id,sGeo_x,sGeo_y), seccNombre(s_id,s_nombre), vistaGeo(vgeo_id,vgeo_x,vgeo_y,vgeo_t), vistaNombre(v_id,v_clave,v_animal,v_poblacion,v_t), sGeo_id-s_id=0, vgeo_id-v_id=0, vgeo_y-sGeo_y=0, vgeo_x-sGeo_x=0, v_poblacion>=150.0000. 
+end %TEMPNEST%
