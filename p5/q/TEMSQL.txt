@@ -1,3 +1,3 @@
 begin %TEMPSQL%
-TmpAgg(animal,numero) :- zonaResp(z_id,z_nombre,z_responsable,z_t), zonaGeo(zGeo_id,zGeo_x,zGeo_y), vistaNombre(v_id,v_clave,animal,numero,v_t), vistaGeo(vGeo_id,vGeo_x,vGeo_y,vGeo_t), z_id-zGeo_id=0, v_id-vGeo_id=0, zGeo_x-vGeo_x=0, zGeo_y-vGeo_y=0, z_nombre="TEMPLADA", z_t=2013. 
+query_4(seV_nombre) :- seccNombre(se_id,se_nombre), seccGeo(seGeo_id,seGeo_x,seGeo_y), seccNombre(seV_id,seV_nombre), seccGeo(seVGeo_id,seVGeo_x,seVGeo_y), se_id-seGeo_id=0, seV_id-seVGeo_id=0, seGeo_x-seVGeo_x=0, seGeo_y-seVGeo_y=0, se_nombre="FELINOS". 
 end %TEMPSQL%
