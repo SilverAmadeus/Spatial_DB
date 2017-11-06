@@ -1,15 +1,6 @@
 begin%agg%
 
-query_5_1_forHaving(clave, nombre, poblacion, coor):- clave=19.0000,nombre=20.0000,poblacion=12.0000,coor=14.0000.
-query_5_1_forHaving(clave, nombre, poblacion, coor):- clave=21.0000,nombre=22.0000,poblacion=8.0000,coor=14.0000.
-query_5_1_forHaving(clave, nombre, poblacion, coor):- clave=23.0000,nombre=24.0000,poblacion=6.0000,coor=14.0000.
-query_5_1_forHaving(clave, nombre, poblacion, coor):- clave=25.0000,nombre=26.0000,poblacion=7.0000,coor=14.0000.
-query_5_1_forHaving(clave, nombre, poblacion, coor):- clave=27.0000,nombre=28.0000,poblacion=20.0000,coor=14.0000.
-query_5_1_forHaving(clave, nombre, poblacion, coor):- clave=29.0000,nombre=30.0000,poblacion=90.0000,coor=14.0000.
-query_5_1_forHaving(clave, nombre, poblacion, coor):- clave=31.0000,nombre=32.0000,poblacion=150.0000,coor=14.0000.
-query_5_1_forHaving(clave, nombre, poblacion, coor):- clave=33.0000,nombre=34.0000,poblacion=20.0000,coor=14.0000.
-query_5_1_forHaving(clave, nombre, poblacion, coor):- clave=35.0000,nombre=36.0000,poblacion=15.0000,coor=14.0000.
-query_5_1_forHaving(clave, nombre, poblacion, coor):- clave=37.0000,nombre=38.0000,poblacion=18.0000,coor=14.0000.
-query_5_1_forHaving(clave, nombre, poblacion, coor):- clave=39.0000,nombre=40.0000,poblacion=14.0000,coor=14.0000.
-query_5_1_forHaving(clave, nombre, poblacion, coor):- clave=41.0000,nombre=42.0000,poblacion=35.0000,coor=14.0000.
+query_7(zona, numero):- zona="TEMPLADA",numero=10.
+query_7(zona, numero):- zona="RECEPCION",numero=2.
+query_7(zona, numero):- zona="SELVATICA",numero=9.
 end%agg%

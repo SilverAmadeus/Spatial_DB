@@ -9,7 +9,4 @@ FROM zonaResp as z, zonaGeo as zGeo, areaVerdeNombre as av, areaVerdeGeo as avGe
 WHERE z.id=zGeo.id, av.id=avGeo.id, zGeo.x=avGeo.x, zGeo.y=avGeo.y
 
 GROUP z.nombre
-
-HAVING 
-
 end %AGGREG%

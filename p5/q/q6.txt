@@ -1,15 +1,12 @@
 begin %AGGREG%
 
-CREATE_VIEW query_7(zona, numero)
+CREATE_VIEW query_6(zona, numero)
 
 SELECT z.nombre, count(av.nombre)
 
 FROM zonaResp as z, zonaGeo as zGeo, areaVerdeNombre as av, areaVerdeGeo as avGeo
 
-WHERE z.id=zGeo.id, av.id=avGeo.id, zGeo.x=avGeo.x, zGeo.y=avGeo.y
+WHERE z.id=zGeo.id, av.id=avGeo.id, zGeo.x=avGeo.x, zGeo.y=avGeo.y, z.t=2000
 
 GROUP z.nombre
-
-HAVING 
-
 end %AGGREG%
