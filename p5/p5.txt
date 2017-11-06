@@ -124,4 +124,21 @@ begin%practica5%
 //Punto_de_Vista_L
  vistaGeo(id, x, y, t):- id=12, x=23, y=5, t>=2000, t<=2013.
  vistaNombre(id,clave,animal,poblacion,t):-id=12,clave="L",animal="PALOMA",poblacion=35,t>=2000,t<=2013.
+
+//SEGMENTE AMARILLO
+ segmGeo(id, x, y):- id=1, x=2, y>=0, y<=4.
+ segmGeo(id, x, y):- id=1, y-x=2, x>=2, x<=12.
+ segmGeo(id, x, y):- id=1, y=14, x>=12, x<=19.
+ segmGeo(id, x, y):- id=1, y=4, x>=2, x<=11.
+ segmNombre(id, nombre):- id=1, nombre="SEGMENTO AMARILLO".
+
+//SEGMENTE AZUL
+ segmGeo(id, x, y):- id=2, y=14, x>=2, x<=10.
+ segmGeo(id, x, y):- id=2, y+0.4x=18, x>=10, x<=15.
+ segmGeo(id, x, y):- id=2, y+2.5x=49.5, x>=15, x<=17.
+ segmGeo(id, x, y):- id=2, y-x=-10, x>=15, x<=17.
+ segmGeo(id, x, y):- id=2, y+0.666x=18.33, x>=17, x<=20.
+ segmNombre(id, nombre):- id=2, nombre="SEGMENTO AZUL".
+
+
 end%practica5%
