@@ -1,0 +1,144 @@
+begin%practica5%
+ //ZONA DE RECEPCION 
+ zonaGeo(id, x, y):-id=1, y>=0, y<=3, x>=0, x<=25.
+ zonaResp(id, nombre, responsable, t):-id=1, nombre="RECEPCION", responsable="JUAN LARA", t>=2000, t<2006.
+ zonaResp(id, nombre, responsable, t):-id=1, nombre="RECEPCION", responsable="EVA LUNA", t>=2006, t<=2013.
+
+//ZONA SELVATICA
+ zonaGeo(id, x, y):-id=2, y>=3, y<=10, x>=0, x<=25.
+ zonaResp(id, nombre, responsable, t):-id=2, nombre="SELVATICA", responsable="JORGE PEREZ", t>=2000, t<2004.
+ zonaResp(id, nombre, responsable, t):-id=2, nombre="SELVATICA", responsable="JUAN AGUILA", t>=2004, t<2007.
+ zonaResp(id, nombre, responsable, t):-id=2, nombre="SELVATICA", responsable="HUGO PAZ", t>=2007, t<=2013.
+
+//ZONA TEMPLADA
+ zonaGeo(id, x, y):-id=3, y>=10, y<=17, x>=0, x<=25.
+ zonaResp(id, nombre, responsable, t):-id=1, nombre="TEMPLADA", responsable="YADIRA LUGO", t>=2000, t<2008.
+ zonaResp(id, nombre, responsable, t):-id=1, nombre="TEMPLADA", responsable="JULIO ACOSTA", t>=2008, t<=2013.
+
+//SECCION AVES
+ seccGeo(id, x, y):- id=1, y-3x<=-7, x>=4, x<=6, y>=0.
+ seccGeo(id, x, y):- id=1, y+0.75x<=8, x>=0, x<=4, y>=0.
+ seccGeo(id, x, y):- id=1, x>=6, x<=8, y>=0, y<=11.
+ seccGeo(id, x, y):- id=1, y+x>=18, x>=8, x<=10, y<=11.
+ seccNombre(id, nombre):- id=1, nombre="AVES".
+
+//SECCION FELINOS
+ seccGeo(id, x, y):- id=2, y+0.75x>=8, y-3x>=-7, x>=0, y<=11.
+ seccGeo(id, x, y):- id=2, x>=0, x<=6, y>=11, y<=17.
+ seccNombre(id, nombre):- id=2, nombre="FELINOS".
+
+//SECCION REPTILES
+ seccGeo(id, x, y):- id=3, x>=6, x<=10, y>=11, y<=17.
+ seccGeo(id, x, y):- id=3, x>=14, y+x<=31, y>=10.
+ seccGeo(id, x, y):- id=3, x>=10, x<=14, y>=10, y<=17.
+ seccNombre(id, nombre):- id=3, nombre="REPTILES".
+
+//SECCION DOMESTICOS
+ seccGeo(id, x, y):- id=4, y+x<=18, x>=8, x<=10, y>=0.
+ seccGeo(id, x, y):- id=4, x>=10, x<=21, y>=0, y<=10.
+ seccNombre(id, nombre):- id=4, nombre="DOMESTICOS".
+
+//SECCION MARINOS
+ seccGeo(id, x, y):- id=5, x>=21, x<=25, y>=0, y<=17.
+ seccGeo(id, x, y):- id=5, y+x>=31, y<=17, x<=21.
+ seccNombre(id, nombre):- id=5, nombre="MARINOS".
+
+//Area Verde 1
+ areaVerdeGeo(id, x, y):- id=1, x>=1, x<=2, y>=12, y<=16.
+ areaVerdeGeo(id, x, y):- id=1, y+x<=16, x>=2, x<=4, y>=12.
+ areaVerdeGeo(id, x, y):- id=1, y-x>=12, x>=2, x<=4, y<=16.
+ areaVerdeNombre(id, nombre):- id=1, nombre="V1".
+
+//Area Verde 2
+ areaVerdeGeo(id, x, y):- id=2, x>=11, x<=15, y>=4, y<=6.
+ areaVerdeGeo(id, x, y):- id=2, y-x<=-5, y+x<=21, y>=6.
+ areaVerdeNombre(id, nombre):- id=2, nombre="V2".
+
+//Area Verde 3
+ areaVerdeGeo(id, x, y):- id=3, x>=20, x<=22, y>=2, y<=8.
+ areaVerdeNombre(id, nombre):- id=3, nombre="V3".
+
+//Area Verde 4
+ areaVerdeGeo(id, x, y):- id=4, x>=20, x<=22, y>=12, y<=16.
+ areaVerdeGeo(id, x, y):- id=4, x>=19, x<=23, y>=13, y<=15.
+ areaVerdeNombre(id, nombre):- id=4, nombre="V4".
+
+//Punto_de_Vista_A
+ vistaGeo(id, x, y, t):- id=1, x=5, y=15, t>=2000, t<2006.
+ vistaGeo(id, x, y, t):- id=1, x=6, y=16, t>=2006, t<=2013.
+ vistaNombre(id,clave,animal,poblacion,t):-id=1,clave="A",animal="LEOPARDO",poblacion=12,t>=2000,t<2006.
+ vistaNombre(id,clave,animal,poblacion,t):-id=1,clave="A",animal="LEOPARDO",poblacion=10,t>=2006,t<=2013.
+
+//Punto_de_Vista_B
+ vistaGeo(id, x, y, t):- id=2, x=6, y=11, t>=2000, t<2007.
+ vistaGeo(id, x, y, t):- id=2, x=6, y=12, t>=2007, t<=2013.
+ vistaNombre(id,clave,animal,poblacion,t):-id=2,clave="B",animal="PUMA",poblacion=8,t>=2000,t<2007.
+ vistaNombre(id,clave,animal,poblacion,t):-id=2,clave="B",animal="PUMA",poblacion=10,t>=2007,t<=2013.
+
+ //Punto_de_Vista_C
+ vistaGeo(id, x, y, t):- id=3, x=6, y=8, t>=2000, t<2004.
+ vistaGeo(id, x, y, t):- id=3, x=8, y=9, t>=2004, t<2007.
+ vistaGeo(id, x, y, t):- id=3, x=8, y=8, t>=2007, t<=2013.
+ vistaNombre(id,clave,animal,poblacion,t):-id=3,clave="C",animal="TUCAN",poblacion=6,t>=2000,t<2004.
+ vistaNombre(id,clave,animal,poblacion,t):-id=3,clave="C",animal="TUCAN",poblacion=9,t>=2004,t<2007.
+ vistaNombre(id,clave,animal,poblacion,t):-id=3,clave="C",animal="TUCAN",poblacion=12,t>=2007,t<=2013.
+
+//Punto_de_Vista_D
+ vistaGeo(id, x, y, t):- id=4, x=1, y=5, t>=2000, t<2005.
+ vistaGeo(id, x, y, t):- id=4, x=2, y=7, t>=2005, t<=2013.
+ vistaNombre(id,clave,animal,poblacion,t):-id=4,clave="D",animal="PAVOREAL",poblacion=7,t>=2000,t<2005.
+ vistaNombre(id,clave,animal,poblacion,t):-id=4,clave="D",animal="PAVOREAL",poblacion=10,t>=2005,t<=2013.
+
+//Punto_de_Vista_E
+ vistaGeo(id, x, y, t):- id=5, x=4, y=2, t>=2000, t<2004.
+ vistaGeo(id, x, y, t):- id=5, x=5, y=3, t>=2004, t<=2013.
+ vistaNombre(id,clave,animal,poblacion,t):-id=5,clave="E",animal="AVESTRUZ",poblacion=20,t>=2000,t<2004.
+ vistaNombre(id,clave,animal,poblacion,t):-id=5,clave="E",animal="AVESTRUZ",poblacion=20,t>=2004,t<=2013.
+
+ //Punto_de_Vista_F
+ vistaGeo(id, x, y, t):- id=6, x=12, y=2, t>=2000, t<2007.
+ vistaGeo(id, x, y, t):- id=6, x=14, y=4, t>=2007, t<=2013.
+ vistaNombre(id,clave,animal,poblacion,t):-id=6,clave="F",animal="GATO",poblacion=90,t>=2000,t<2007.
+ vistaNombre(id,clave,animal,poblacion,t):-id=6,clave="F",animal="GATO",poblacion=120,t>=2007,t<=2013.
+
+//Punto_de_Vista_G
+ vistaGeo(id, x, y, t):- id=7, x=17, y=2, t>=2000, t<=2013.
+ vistaNombre(id,clave,animal,poblacion,t):-id=7,clave="G",animal="PERRO",poblacion=150,t>=2000,t<=2013.
+
+//Punto_de_Vista_H
+ vistaGeo(id, x, y, t):- id=8, x=13, y=9, t>=2000, t<=2013.
+ vistaNombre(id,clave,animal,poblacion,t):-id=8,clave="H",animal="PERICO",poblacion=20,t>=2000,t<=2013.
+
+//Punto_de_Vista_I
+ vistaGeo(id, x, y, t):- id=9, x=14, y=14, t>=2000, t<=2013.
+ vistaNombre(id,clave,animal,poblacion,t):-id=9,clave="I",animal="COCODRILO",poblacion=15,t>=2000,t<=2013.
+
+//Punto_de_Vista_J
+ vistaGeo(id, x, y, t):- id=10, x=24, y=16, t>=2000, t<=2013.
+ vistaNombre(id,clave,animal,poblacion,t):-id=10,clave="J",animal="DELFIN",poblacion=18,t>=2000,t<=2013.
+
+//Punto_de_Vista_K
+ vistaGeo(id, x, y, t):- id=11, x=23, y=10, t>=2000, t<=2013.
+ vistaNombre(id,clave,animal,poblacion,t):-id=11,clave="K",animal="TIBURON",poblacion=14,t>=2000,t<=2013.
+
+//Punto_de_Vista_L
+ vistaGeo(id, x, y, t):- id=12, x=23, y=5, t>=2000, t<=2013.
+ vistaNombre(id,clave,animal,poblacion,t):-id=12,clave="L",animal="PALOMA",poblacion=35,t>=2000,t<=2013.
+
+//SEGMENTE AMARILLO
+ segmGeo(id, x, y):- id=1, x=2, y>=0, y<=4.
+ segmGeo(id, x, y):- id=1, y-x=2, x>=2, x<=12.
+ segmGeo(id, x, y):- id=1, y=14, x>=12, x<=19.
+ segmGeo(id, x, y):- id=1, y=4, x>=2, x<=11.
+ segmNombre(id, nombre):- id=1, nombre="SEGMENTO AMARILLO".
+
+//SEGMENTE AZUL
+ segmGeo(id, x, y):- id=2, y=14, x>=2, x<=10.
+ segmGeo(id, x, y):- id=2, y+0.4x=18, x>=10, x<=15.
+ segmGeo(id, x, y):- id=2, y+2.5x=49.5, x>=15, x<=17.
+ segmGeo(id, x, y):- id=2, y-x=-10, x>=15, x<=17.
+ segmGeo(id, x, y):- id=2, y+0.666x=18.33, x>=17, x<=20.
+ segmNombre(id, nombre):- id=2, nombre="SEGMENTO AZUL".
+
+
+end%practica5%
