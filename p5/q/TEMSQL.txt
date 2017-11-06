@@ -1,3 +1,3 @@
 begin %TEMPSQL%
-query_3(sGeo_x, sGeo_y) :- segmNombre(s_id,s_nombre), segmGeo(sGeo_id,sGeo_x,sGeo_y), zonaResp(z_id,z_nombre,z_responsable,z_t), zonaGeo(zGeo_id,zGeo_x,zGeo_y), s_id-sGeo_id=0, z_id-zGeo_id=0, sGeo_x-zGeo_x=0, sGeo_y-zGeo_y=0, z_nombre="RECEPCION", s_nombre="AMARILLO". 
+TmpAgg(clave, nombre, poblacion, coor) :- segmNombre(s_id,s_nombre), segmGeo(sGeo_id,sGeo_x,coor), vistaNombre(v_id,clave,nombre,poblacion,v_t), vistaGeo(vGeo_id,vGeo_x,vGeo_y,vGeo_t), s_id-sGeo_id=0, v_id-vGeo_id=0, s_nombre="AMARILLO", vGeo_t=2000, v_t=2001. 
 end %TEMPSQL%

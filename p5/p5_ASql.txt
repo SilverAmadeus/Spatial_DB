@@ -1,0 +1,15 @@
+begin %AGGREG%
+
+CREATE_VIEW query_5_1(clave, nombre, poblacion, coor)
+
+SELECT v.clave, v.animal, v.poblacion, max(sGeo.y)
+
+FROM segmNombre as s, segmGeo as sGeo, vistaNombre as v, vistaGeo as vGeo
+
+WHERE s.id=sGeo.id, v.id=vGeo.id, s.nombre="AMARILLO", vGeo.t=2000, v.t=2001
+
+GROUP v.clave, v.animal, v.poblacion
+
+HAVING max(sGeo.y)=vGeo.y
+
+end %AGGREG%

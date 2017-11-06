@@ -1,0 +1,3 @@
+begin %TEMPHAVE%
+query_5_1(clave, nombre, poblacion, coor):- query_5_1_forHaving(clave, nombre, poblacion, coor), max(sGeo.y)-vGeo.y = 0.
+end %TEMPHAVE%

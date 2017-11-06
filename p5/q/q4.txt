@@ -1,0 +1,11 @@
+begin %basic%
+
+CREATE_VIEW query_4
+
+SELECT seV.nombre
+
+FROM seccNombre as se, seccGeo as seGeo, seccNombre as seV, seccGeo as seVGeo   
+
+WHERE se.id=seGeo.id, seV.id=seVGeo.id, seGeo.x=seVGeo.x, seGeo.y=seVGeo.y, se.nombre="FELINOS"
+
+end %basic%

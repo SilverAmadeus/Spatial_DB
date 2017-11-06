@@ -1,11 +1,11 @@
 begin %basic%
 
-CREATE_VIEW query_3
+CREATE_VIEW query_5
 
-SELECT sGeo.x, sGeo.y
+SELECT v.clave, v.animal, v.poblacion
 
-FROM segmNombre as s, segmGeo as sGeo, zonaResp as z,  zonaGeo as zGeo 
+FROM segmNombre as s, segmGeo as sGeo, vistaNombre as v, vistaGeo as vGeo
 
-WHERE s.id=sGeo.id, z.id=zGeo.id, sGeo.x=zGeo.x, sGeo.y=zGeo.y, z.nombre="RECEPCION", s.nombre="AMARILLO"
+WHERE s.id=sGeo.id, v.id=vGeo.id, sGeo.x = vGeo.x, sGeo.y<=vGeo.y, s.nombre="AMARILLO", vGeo.t=2000, v.t=2001
 
 end %basic%

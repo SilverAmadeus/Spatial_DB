@@ -1,0 +1,3 @@
+begin%temp%
+TmpAgg2(vclave, vanimal, vpoblacion, max(sGeoy)):- TmpAgg(vclave, vanimal, vpoblacion, sGeoy).
+end%temp%
