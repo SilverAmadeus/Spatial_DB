@@ -12,8 +12,8 @@ begin%practica5%
 
 //ZONA TEMPLADA
  zonaGeo(id, x, y):-id=3, y>=10, y<=17, x>=0, x<=25.
- zonaResp(id, nombre, responsable, t):-id=1, nombre="TEMPLADA", responsable="YADIRA LUGO", t>=2000, t<2008.
- zonaResp(id, nombre, responsable, t):-id=1, nombre="TEMPLADA", responsable="JULIO ACOSTA", t>=2008, t<=2013.
+ zonaResp(id, nombre, responsable, t):-id=3, nombre="TEMPLADA", responsable="YADIRA LUGO", t>=2000, t<2008.
+ zonaResp(id, nombre, responsable, t):-id=3, nombre="TEMPLADA", responsable="JULIO ACOSTA", t>=2008, t<=2013.
 
 //SECCION AVES
  seccGeo(id, x, y):- id=1, y-3x<=-7, x>=4, x<=6, y>=0.
@@ -130,7 +130,7 @@ begin%practica5%
  segmGeo(id, x, y):- id=1, y-x=2, x>=2, x<=12.
  segmGeo(id, x, y):- id=1, y=14, x>=12, x<=19.
  segmGeo(id, x, y):- id=1, y=4, x>=2, x<=11.
- segmNombre(id, nombre):- id=1, nombre="SEGMENTO AMARILLO".
+ segmNombre(id, nombre):- id=1, nombre="AMARILLO".
 
 //SEGMENTE AZUL
  segmGeo(id, x, y):- id=2, y=14, x>=2, x<=10.
@@ -138,7 +138,7 @@ begin%practica5%
  segmGeo(id, x, y):- id=2, y+2.5x=49.5, x>=15, x<=17.
  segmGeo(id, x, y):- id=2, y-x=-10, x>=15, x<=17.
  segmGeo(id, x, y):- id=2, y+0.666x=18.33, x>=17, x<=20.
- segmNombre(id, nombre):- id=2, nombre="SEGMENTO AZUL".
+ segmNombre(id, nombre):- id=2, nombre="AZUL".
 
 
 end%practica5%

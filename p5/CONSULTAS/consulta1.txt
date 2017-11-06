@@ -1,0 +1,11 @@
+begin %basic%
+
+CREATE_VIEW consulta_1
+
+SELECT responsable
+
+FROM zonaResp
+
+WHERE t=2007, nombre="SELVATICA"
+
+end %basic%

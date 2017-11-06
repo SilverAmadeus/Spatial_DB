@@ -1,0 +1,11 @@
+begin %basic%
+
+CREATE_VIEW consulta3
+
+SELECT segG.x, segG.y
+
+FROM segmGeo as segG, segmNombre as segN, zonaResp as zr, zonaGeo as z
+
+WHERE segG.id=segN.id, zr.id=z.id, segG.x=z.x, segG.y=z.y, segN.nombre="AMARILLO", zr.nombre="SELVATICA"
+
+end %basic%

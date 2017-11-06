@@ -1,0 +1,11 @@
+begin %basic%
+
+CREATE_VIEW consulta_2
+
+SELECT avn.nombre
+
+FROM areaVerdeNombre as avn, areaVerdeGeo as av, zonaGeo as z, zonaResp as zr
+
+WHERE avn.id = av.id, z.id=zr.id, av.x=z.x, av.y=z.y, zr.nombre="SELVATICA"
+
+end %basic%
