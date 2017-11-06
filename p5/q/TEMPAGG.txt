@@ -1,6 +1,8 @@
 begin%agg%
 
-query_7(zona, numero):- zona="TEMPLADA",numero=10.
-query_7(zona, numero):- zona="RECEPCION",numero=2.
-query_7(zona, numero):- zona="SELVATICA",numero=9.
+query_10(animal,numero):- animal="PUMA",numero=36.0000.
+query_10(animal,numero):- animal="DELFIN",numero=18.0000.
+query_10(animal,numero):- animal="TIBURON",numero=14.0000.
+query_10(animal,numero):- animal="LEOPARDO",numero=44.0000.
+query_10(animal,numero):- animal="COCODRILO",numero=15.0000.
 end%agg%

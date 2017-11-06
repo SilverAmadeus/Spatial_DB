@@ -1,0 +1,15 @@
+begin %SET%
+
+CREATE_VIEW query_8
+
+SELECT1 v.clave, v.animal, v.poblacion
+
+
+
+INTUNION UNION
+
+SELECT2 v.clave, v.animal, v.poblacion
+
+
+
+end %SET%
