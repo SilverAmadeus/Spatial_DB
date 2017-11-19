@@ -1,4 +1,4 @@
-package mx.unam.fi.bde.geometria;
+package mx.unam.fi.bde.geometria.moro;
 
 public class Punto{
     double x;

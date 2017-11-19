@@ -1,4 +1,4 @@
-package mx.unam.fi.bde.geometria;
+package mx.unam.fi.bde.geometria.moro;
 
 import java.util.List;
 

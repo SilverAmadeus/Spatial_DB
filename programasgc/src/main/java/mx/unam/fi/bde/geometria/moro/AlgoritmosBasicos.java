@@ -1,4 +1,4 @@
-package mx.unam.fi.bde.geometria;
+package mx.unam.fi.bde.geometria.moro;
 
 /**
  * Este método verifica la ubicación de un punto con respecto a un segmento
@@ -16,8 +16,7 @@ si son colineales.
 
 public class AlgoritmosBasicos {
 
-    public static int ubicacionPunto(Punto a, Punto b, Punto p) {
-
-
+    public static double ubicacionPunto(Punto a, Punto b, Punto p) {
+        return ((a.x * (p.y - b.y) - a.y * (p.x - b.x) + (p.x * b.y) - (b.x * p.y)));
     }
 }
