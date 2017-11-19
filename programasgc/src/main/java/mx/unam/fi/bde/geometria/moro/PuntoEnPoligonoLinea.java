@@ -1,10 +1,8 @@
 package mx.unam.fi.bde.geometria.moro;
 
 import java.util.List;
-import mx.unam.fi.bde.geometria.moro.Poligono;
-import mx.unam.fi.bde.geometria.moro.Punto;
 
-public class PuntoEnPoligonoLinea extends AlgoritmosBasicos {
+public class PuntoEnPoligonoLinea extends AlgoritmosBasicos{
 
     /**
      * Verifica si un punto está en un polígono empleando la técnica de la recta paralela al eje X a
