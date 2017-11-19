@@ -3,6 +3,7 @@ package mx.unam.fi.bde.geometria.moro;
 import java.util.LinkedList;
 import java.util.List;
 
+
 public class AreaPoligonoMonotonoOrdenado {
 
     private PuntoCadena [] puntos;
@@ -95,11 +96,30 @@ public class AreaPoligonoMonotonoOrdenado {
     private void triangulaPoligonoConvexo(Punto punto) {
         double det;
         int size;
+        Punto ultimo, penultimo;
         while ((size = lista.size()) >= 2) {
-//TODO: desarrollar
+            ultimo = lista.peekLast();
+            penultimo = lista.peekLast();
+
+            det = determinante(ultimo, penultimo, punto);
+            //No se detecta triangulo
+            if (det == 0){
+                break;
+            }//Si la lista es mayor que 2 todavia seguir procesando
+            if ((det > 0)){
+                sumaDet += Math.abs(det);
+                lista.getLast(); // pop()
+            }
+            if ((det < 0)){
+                //!!!!Se debe checar el signoDet? D:
+            }
+
+
+
         }
-// se agrega p a la lista
+        // se agrega p a la lista
         lista.add(punto);
+        //este es el PUSH
     }
 
     /**
@@ -112,7 +132,16 @@ public class AreaPoligonoMonotonoOrdenado {
      * @return
      */
     private boolean esPuntoOpuesto(int indexP) {
-//TODO: desarrollar
+        int result;
+        PuntoCadena pULtimo, pSiguiente;
+        pULtimo = (PuntoCadena)lista.peekLast(); //No sacar el elemento
+        pSiguiente = puntos[indexP];
+        result  = Math.abs(pULtimo.index-pSiguiente.index);
+        if (result == 1){
+            return true;
+        }else{
+            return false;
+        }
     }
 
     /**
