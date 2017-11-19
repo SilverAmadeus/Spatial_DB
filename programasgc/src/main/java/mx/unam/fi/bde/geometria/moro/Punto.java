@@ -1,8 +1,8 @@
 package mx.unam.fi.bde.geometria.moro;
 
-public class Punto{
-    double x;
-    double y;
+public class Punto implements  Comparable<Punto>{
+    public double x;
+    public double y;
 
 
     public Punto(double x, double y) {
@@ -14,36 +14,31 @@ public class Punto{
 
 
     public String toString(){
-        return "("+x+","+y+")";
+        return "(" + x + "," + y + ")";
        }
-
+    @Override
     public boolean equals(Object obj){
-        if (!(obj instanceof Punto)){
-            return false;
+        if ((obj instanceof Punto)){
+            Punto p = (Punto)obj;
+            return this.x == p.x && this.y == p.y;
         }
-        Punto p = (Punto) obj;
-        return this.x == p.x && this.y == p.y;
+        return false;
     }
-
-    public int compareTo(Punto p){
-        if (this.equals(p)){
-            return 0; //The same
-        }
-        else{
-            if(this.x >= p.x){
-                return this.compareY(p.x);
-                }
-            else{
-                return this.compareY(p.y);
+    @Override
+    public int compareTo(Punto o){
+        if (this.x > o.x) {
+            return 1;
+        } else if (this.x < o.x) {
+            return -1;
+        } else {
+            if (this.y > o.y) {
+                return 1;
+            } else if (this.y < o.y) {
+                return -1;
+            } else {
+                return 0;
             }
         }
     }
 
-    public int compareY(double y){
-        if (this.y >= y){
-            return 1;
-        }else {
-            return -1;
-        }
-    }
 }
