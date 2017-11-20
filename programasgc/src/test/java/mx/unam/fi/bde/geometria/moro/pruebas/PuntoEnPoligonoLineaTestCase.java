@@ -2,8 +2,10 @@ package mx.unam.fi.bde.geometria.moro.pruebas;
 
 import org.junit.Assert;
 import org.junit.Test;
+
 import java.util.List;
 import java.util.ArrayList;
+
 import mx.unam.fi.bde.geometria.moro.Punto;
 import mx.unam.fi.bde.geometria.moro.Poligono;
 import mx.unam.fi.bde.geometria.moro.PuntoEnPoligonoLinea;
@@ -41,47 +43,57 @@ public class PuntoEnPoligonoLineaTestCase {
         int ubicacion;
         // punto fuera
         ubicacion = PuntoEnPoligonoLinea.puntoEnPoligono(poligono, new Punto(1, 6));
+        System.out.println(ubicacion);
         Assert.assertTrue(ubicacion == 1);
 
         // punto Dentro
         ubicacion = PuntoEnPoligonoLinea.puntoEnPoligono(poligono, new Punto(7, 5));
+        System.out.println(ubicacion);
         Assert.assertTrue(ubicacion == -1);
 
         // punto en limite
         ubicacion = PuntoEnPoligonoLinea.puntoEnPoligono(poligono, new Punto(1, 4));
+        System.out.println(ubicacion);
         Assert.assertTrue(ubicacion == 0);
 
         // punto en limite
         ubicacion = PuntoEnPoligonoLinea.puntoEnPoligono(poligono, new Punto(2, 3));
+        System.out.println(ubicacion);
         Assert.assertTrue(ubicacion == 0);
 
         // punto fuera
         ubicacion = PuntoEnPoligonoLinea.puntoEnPoligono(poligono, new Punto(10, 5));
+        System.out.println(ubicacion);
         Assert.assertTrue(ubicacion == 1);
 
         // punto dentro
         ubicacion = PuntoEnPoligonoLinea.puntoEnPoligono(poligono, new Punto(4, 4));
+        System.out.println(ubicacion);
         Assert.assertTrue(ubicacion == -1);
 
         // punto dentro
         ubicacion = PuntoEnPoligonoLinea.puntoEnPoligono(poligono, new Punto(11, 3));
+        System.out.println(ubicacion);
         Assert.assertTrue(ubicacion == -1);
 
         // punto en segmento
         ubicacion = PuntoEnPoligonoLinea.puntoEnPoligono(poligono, new Punto(8, 6));
+        System.out.println(ubicacion);
         Assert.assertTrue(ubicacion == 0);
 
         // punto en segmento
         ubicacion = PuntoEnPoligonoLinea.puntoEnPoligono(poligono, new Punto(13, 1));
+        System.out.println(ubicacion);
         Assert.assertTrue(ubicacion == 0);
 
         // punto en segmento
         ubicacion = PuntoEnPoligonoLinea.puntoEnPoligono(poligono, new Punto(13, 8));
+        System.out.println(ubicacion);
         Assert.assertTrue(ubicacion == 0);
 
         // punto en segmento
         ubicacion = PuntoEnPoligonoLinea.puntoEnPoligono(poligono, new Punto(15, 5));
+        System.out.println(ubicacion);
         Assert.assertTrue(ubicacion == 0);
     }
-
 }

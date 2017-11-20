@@ -83,6 +83,7 @@ public class AreaPoligonoMonotonoTestCase {
 
         // poligono 1
         ap = new AreaPoligonoMonotonoOrdenado(pl1);
+
         area = ap.area();
         Assert.assertEquals(new Double(110), new Double(area));
 
