@@ -102,10 +102,11 @@ public class AreaPoligonoMonotonoOrdenado {
         double det;
         int size;
         Punto ultimo, penultimo;
+        System.out.println(lista);
         while ((size = lista.size()) >= 2) {
-            ultimo = lista.peekLast();
-            penultimo = lista.peekLast();
-
+            ultimo = lista.get(lista.size() -1);
+            penultimo = lista.get(lista.size() -2);
+            System.out.println("Ultimo"+ultimo + " pENULTIMO" + penultimo);
             det = determinante(ultimo, penultimo, punto);
             //No se detecta triangulo
             if (det == 0){ // Signo determinante NO se cambia cuando es cero
@@ -113,7 +114,7 @@ public class AreaPoligonoMonotonoOrdenado {
             }//Si la lista es mayor que 2 todavia seguir procesando
             if ((det * signoDet) > 0.0){ //SI los signos son los mismos
                 sumaDet += Math.abs(det);
-                lista.getLast(); // pop()
+                lista.removeLast(); // pop()
             }
             if ((det * signoDet) < 0.0){
                 break;
@@ -140,7 +141,7 @@ public class AreaPoligonoMonotonoOrdenado {
         pSiguiente = puntos[indexP];
         result  = Math.abs(pULtimo.index-pSiguiente.index);
         //System.out.println(pULtimo+"-"+pSiguiente+"="+result);
-        if (result == 1){
+        if (result != 1){
             return true;
         }else{
             return false;
