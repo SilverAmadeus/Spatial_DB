@@ -1,5 +1,7 @@
 package mx.unam.fi.bde.geometria.moro;
 
+import java.util.Comparator;
+
 public class Punto implements  Comparable<Punto>{
     public double x;
     public double y;
@@ -15,7 +17,8 @@ public class Punto implements  Comparable<Punto>{
 
     public String toString(){
         return "(" + x + "," + y + ")";
-       }
+    }
+
     @Override
     public boolean equals(Object obj){
         if ((obj instanceof Punto)){
@@ -24,6 +27,7 @@ public class Punto implements  Comparable<Punto>{
         }
         return false;
     }
+
     @Override
     public int compareTo(Punto o){
         if (this.x > o.x) {

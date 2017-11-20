@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="00068664-940e-4da8-89b1-8d7ff2a45dc4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/mx/unam/fi/bde/geometria/moro/pruebas/AreaPoligonoMonotonoTestCase.class" afterPath="$PROJECT_DIR$/target/test-classes/mx/unam/fi/bde/geometria/moro/pruebas/AreaPoligonoMonotonoTestCase.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/mx/unam/fi/bde/geometria/moro/pruebas/PuntoEnPoligonoLineaTestCase.class" afterPath="$PROJECT_DIR$/target/test-classes/mx/unam/fi/bde/geometria/moro/pruebas/PuntoEnPoligonoLineaTestCase.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mx/unam/fi/bde/geometria/moro/Punto.class" afterPath="$PROJECT_DIR$/target/classes/mx/unam/fi/bde/geometria/moro/Punto.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mx/unam/fi/bde/geometria/moro/PuntoEnPoligonoLinea.class" afterPath="$PROJECT_DIR$/target/classes/mx/unam/fi/bde/geometria/moro/PuntoEnPoligonoLinea.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/mx/unam/fi/bde/geometria/moro/Punto.java" afterPath="$PROJECT_DIR$/src/main/java/mx/unam/fi/bde/geometria/moro/Punto.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/mx/unam/fi/bde/geometria/moro/PuntoEnPoligonoLinea.java" afterPath="$PROJECT_DIR$/src/main/java/mx/unam/fi/bde/geometria/moro/PuntoEnPoligonoLinea.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/mx/unam/fi/bde/geometria/moro/pruebas/AreaPoligonoMonotonoTestCase.java" afterPath="$PROJECT_DIR$/src/test/java/mx/unam/fi/bde/geometria/moro/pruebas/AreaPoligonoMonotonoTestCase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/mx/unam/fi/bde/geometria/moro/pruebas/PuntoEnPoligonoLineaTestCase.java" afterPath="$PROJECT_DIR$/src/test/java/mx/unam/fi/bde/geometria/moro/pruebas/PuntoEnPoligonoLineaTestCase.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -20,24 +19,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="PuntoEnPoligonoLineaTestCase.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/mx/unam/fi/bde/geometria/moro/pruebas/PuntoEnPoligonoLineaTestCase.java">
+      <file leaf-file-name="PuntoEnPoligonoLinea.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/mx/unam/fi/bde/geometria/moro/PuntoEnPoligonoLinea.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="15" column="35" lean-forward="true" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="447">
+              <caret line="46" column="91" lean-forward="false" selection-start-line="46" selection-start-column="91" selection-end-line="46" selection-end-column="91" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PuntoEnPoligonoLinea.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/mx/unam/fi/bde/geometria/moro/PuntoEnPoligonoLinea.java">
+      <file leaf-file-name="PuntoEnPoligonoLineaTestCase.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/mx/unam/fi/bde/geometria/moro/pruebas/PuntoEnPoligonoLineaTestCase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="774">
-              <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="177">
+              <caret line="79" column="84" lean-forward="true" selection-start-line="79" selection-start-column="84" selection-end-line="79" selection-end-column="84" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -79,13 +78,13 @@
         <option value="$PROJECT_DIR$/src/test/java/AreaPoligonoConvexoTestCase.java" />
         <option value="$PROJECT_DIR$/src/main/java/mx/unam/fi/bde/geometria/moro/PuntoCadena.java" />
         <option value="$PROJECT_DIR$/src/main/java/mx/unam/fi/bde/geometria/moro/QuickSortSimplePuntos.java" />
-        <option value="$PROJECT_DIR$/src/main/java/mx/unam/fi/bde/geometria/moro/Punto.java" />
         <option value="$PROJECT_DIR$/src/main/java/mx/unam/fi/bde/geometria/moro/Poligono.java" />
         <option value="$PROJECT_DIR$/src/main/java/mx/unam/fi/bde/geometria/moro/AreaPoligonoMonotonoOrdenado.java" />
         <option value="$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11.jar!/org/junit/Assert.class" />
         <option value="$PROJECT_DIR$/src/test/java/mx/unam/fi/bde/geometria/moro/pruebas/AreaPoligonoMonotonoTestCase.java" />
-        <option value="$PROJECT_DIR$/src/test/java/mx/unam/fi/bde/geometria/moro/pruebas/PuntoEnPoligonoLineaTestCase.java" />
         <option value="$PROJECT_DIR$/src/test/java/PuntoEnPoligonoLineaTestCase.java" />
+        <option value="$PROJECT_DIR$/src/main/java/mx/unam/fi/bde/geometria/moro/Punto.java" />
+        <option value="$PROJECT_DIR$/src/test/java/mx/unam/fi/bde/geometria/moro/pruebas/PuntoEnPoligonoLineaTestCase.java" />
         <option value="$PROJECT_DIR$/src/main/java/mx/unam/fi/bde/geometria/moro/PuntoEnPoligonoLinea.java" />
       </list>
     </option>
@@ -109,10 +108,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="65" />
-    <option name="y" value="52" />
-    <option name="width" value="651" />
-    <option name="height" value="716" />
+    <option name="x" value="496" />
+    <option name="y" value="28" />
+    <option name="width" value="641" />
+    <option name="height" value="686" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -149,10 +148,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -211,6 +209,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -246,6 +245,31 @@
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="PACKAGE_NAME" value="mx.unam.fi.bde.geometria.moro.pruebas" />
       <option name="MAIN_CLASS_NAME" value="mx.unam.fi.bde.geometria.moro.pruebas.AreaPoligonoConvexoTestCase" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="AreaPoligonoMonotonoTestCase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="mx.unam.fi.bde.geometria.moro.pruebas.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="programasgc" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="PACKAGE_NAME" value="mx.unam.fi.bde.geometria.moro.pruebas" />
+      <option name="MAIN_CLASS_NAME" value="mx.unam.fi.bde.geometria.moro.pruebas.AreaPoligonoMonotonoTestCase" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -465,20 +489,21 @@
       <properties />
       <listeners />
     </configuration>
-    <list size="5">
+    <list size="6">
       <item index="0" class="java.lang.String" itemvalue="JUnit.UbicacionPuntoTestCase.ubicacionPunto" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.PuntoEnPoligonoTestCase" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.PuntoEnPoligonoLineaTestCase.puntoEnPoligono" />
       <item index="3" class="java.lang.String" itemvalue="JUnit.AreaPoligonoConvexoTestCase" />
       <item index="4" class="java.lang.String" itemvalue="JUnit.PuntoEnPoligonoLineaTestCase" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.AreaPoligonoMonotonoTestCase" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="JUnit.PuntoEnPoligonoLineaTestCase.puntoEnPoligono" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.PuntoEnPoligonoLineaTestCase" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.PuntoEnPoligonoTestCase" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.AreaPoligonoConvexoTestCase" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.PuntoEnPoligonoTestCase" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.AreaPoligonoMonotonoTestCase" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.PuntoEnPoligonoLineaTestCase" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.PuntoEnPoligonoTestCase" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.AreaPoligonoConvexoTestCase" />
       </list>
     </recent_temporary>
   </component>
@@ -496,35 +521,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PuntoEnPoligonoLineaTestCase - 2017.11.19 at 22h 08m 46s.xml">
-      <configuration name="PuntoEnPoligonoLineaTestCase" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PuntoEnPoligonoLineaTestCase_puntoEnPoligono - 2017.11.19 at 21h 32m 21s.xml">
+    <history-entry file="PuntoEnPoligonoLineaTestCase_puntoEnPoligono - 2017.11.20 at 09h 43m 08s.xml">
       <configuration name="PuntoEnPoligonoLineaTestCase.puntoEnPoligono" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PuntoEnPoligonoLineaTestCase_puntoEnPoligono - 2017.11.19 at 21h 39m 12s.xml">
+    <history-entry file="PuntoEnPoligonoLineaTestCase_puntoEnPoligono - 2017.11.20 at 09h 45m 50s.xml">
       <configuration name="PuntoEnPoligonoLineaTestCase.puntoEnPoligono" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PuntoEnPoligonoLineaTestCase_puntoEnPoligono - 2017.11.19 at 21h 59m 10s.xml">
+    <history-entry file="PuntoEnPoligonoLineaTestCase_puntoEnPoligono - 2017.11.20 at 09h 47m 58s.xml">
       <configuration name="PuntoEnPoligonoLineaTestCase.puntoEnPoligono" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PuntoEnPoligonoLineaTestCase_puntoEnPoligono - 2017.11.19 at 22h 15m 40s.xml">
+    <history-entry file="PuntoEnPoligonoLineaTestCase_puntoEnPoligono - 2017.11.20 at 09h 52m 04s.xml">
       <configuration name="PuntoEnPoligonoLineaTestCase.puntoEnPoligono" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PuntoEnPoligonoLineaTestCase_puntoEnPoligono - 2017.11.19 at 22h 22m 03s.xml">
+    <history-entry file="PuntoEnPoligonoLineaTestCase_puntoEnPoligono - 2017.11.20 at 10h 01m 34s.xml">
       <configuration name="PuntoEnPoligonoLineaTestCase.puntoEnPoligono" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PuntoEnPoligonoLineaTestCase_puntoEnPoligono - 2017.11.19 at 22h 27m 27s.xml">
+    <history-entry file="PuntoEnPoligonoLineaTestCase_puntoEnPoligono - 2017.11.20 at 10h 02m 48s.xml">
       <configuration name="PuntoEnPoligonoLineaTestCase.puntoEnPoligono" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PuntoEnPoligonoTestCase_puntoEnPoligono - 2017.11.19 at 21h 32m 35s.xml">
-      <configuration name="PuntoEnPoligonoTestCase.puntoEnPoligono" configurationId="JUnit" />
+    <history-entry file="PuntoEnPoligonoLineaTestCase_puntoEnPoligono - 2017.11.20 at 10h 06m 51s.xml">
+      <configuration name="PuntoEnPoligonoLineaTestCase.puntoEnPoligono" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UbicacionPuntoTestCase_ubicacionPunto - 2017.11.19 at 21h 32m 43s.xml">
-      <configuration name="UbicacionPuntoTestCase.ubicacionPunto" configurationId="JUnit" />
+    <history-entry file="PuntoEnPoligonoLineaTestCase_puntoEnPoligono - 2017.11.20 at 10h 09m 09s.xml">
+      <configuration name="PuntoEnPoligonoLineaTestCase.puntoEnPoligono" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UbicacionPuntoTestCase_ubicacionPunto - 2017.11.19 at 21h 38m 46s.xml">
-      <configuration name="UbicacionPuntoTestCase.ubicacionPunto" configurationId="JUnit" />
+    <history-entry file="PuntoEnPoligonoLineaTestCase_puntoEnPoligono - 2017.11.20 at 10h 09m 58s.xml">
+      <configuration name="PuntoEnPoligonoLineaTestCase.puntoEnPoligono" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PuntoEnPoligonoLineaTestCase_puntoEnPoligono - 2017.11.20 at 10h 10m 18s.xml">
+      <configuration name="PuntoEnPoligonoLineaTestCase.puntoEnPoligono" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView" selected-index="2">
@@ -537,19 +562,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="52" width="1301" height="744" extended-state="6" />
+    <frame x="496" y="28" width="1301" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32868218" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281493" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32868218" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988048" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.64696735" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36547434" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32868218" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -558,8 +583,8 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24940239" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39968896" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39968896" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -599,23 +624,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/mx/unam/fi/bde/geometria/moro/AreaPoligonoMonotonoOrdenado.java</url>
-          <line>33</line>
-          <properties />
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <default-breakpoints>
-        <breakpoint enabled="true" type="java-exception">
-          <properties />
-        </breakpoint>
-      </default-breakpoints>
-      <option name="time" value="5" />
+      <option name="time" value="31" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -628,7 +640,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="810">
           <caret line="47" column="5" lean-forward="false" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
-          <folding />
+          <folding>
+            <element signature="e#321#322#0" expanded="true" />
+            <element signature="e#367#368#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -651,7 +666,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="810">
           <caret line="47" column="5" lean-forward="false" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
-          <folding />
+          <folding>
+            <element signature="e#321#322#0" expanded="true" />
+            <element signature="e#367#368#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -674,7 +692,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#321#322#0" expanded="true" />
+            <element signature="e#367#368#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -713,50 +734,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///opt/jdk1.8.0_151/src.zip!/java/lang/ClassLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="435" column="0" lean-forward="false" selection-start-line="435" selection-start-column="0" selection-end-line="435" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/mx/unam/fi/bde/geometria/moro/QuickSortSimplePuntos.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="393">
           <caret line="33" column="14" lean-forward="true" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/mx/unam/fi/bde/geometria/moro/pruebas/AreaPoligonoMonotonoTestCase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-936">
-          <caret line="11" column="63" lean-forward="false" selection-start-line="11" selection-start-column="63" selection-end-line="11" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/mx/unam/fi/bde/geometria/moro/AreaPoligonoMonotonoOrdenado.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="33" column="31" lean-forward="true" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/mx/unam/fi/bde/geometria/moro/Poligono.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/mx/unam/fi/bde/geometria/moro/Punto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="27" column="33" lean-forward="false" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -793,9 +774,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="98">
           <caret line="6" column="28" lean-forward="true" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -803,24 +781,136 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="19" column="35" lean-forward="true" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/mx/unam/fi/bde/geometria/moro/Punto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="846">
+          <caret line="47" column="1" lean-forward="true" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#321#322#0" expanded="true" />
+            <element signature="e#367#368#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/mx/unam/fi/bde/geometria/moro/Poligono.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/mx/unam/fi/bde/geometria/moro/pruebas/AreaPoligonoMonotonoTestCase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="1" lean-forward="false" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/mx/unam/fi/bde/geometria/moro/AreaPoligonoMonotonoOrdenado.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="33" column="31" lean-forward="false" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///opt/jdk1.8.0_151/jre/lib/rt.jar!/sun/misc/Launcher.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="254" column="0" lean-forward="false" selection-start-line="254" selection-start-column="0" selection-end-line="254" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///opt/jdk1.8.0_151/jre/lib/rt.jar!/sun/launcher/LauncherHelper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="361" column="0" lean-forward="false" selection-start-line="361" selection-start-column="0" selection-end-line="361" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="jar:///opt/jdk1.8.0_151/src.zip!/java/net/URLClassLoader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="356" column="8" lean-forward="false" selection-start-line="356" selection-start-column="8" selection-end-line="356" selection-end-column="37" />
-          <folding />
+        <state relative-caret-position="173">
+          <caret line="380" column="0" lean-forward="false" selection-start-line="380" selection-start-column="0" selection-end-line="381" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///opt/jdk1.8.0_151/src.zip!/java/lang/ClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="435" column="0" lean-forward="false" selection-start-line="435" selection-start-column="0" selection-end-line="435" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11.jar!/org/junit/runners/model/FrameworkMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11.jar!/org/junit/runners/BlockJUnit4ClassRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11.jar!/org/junit/runners/ParentRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="184" column="0" lean-forward="false" selection-start-line="184" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11.jar!/org/junit/internal/runners/statements/InvokeMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///opt/jdk1.8.0_151/src.zip!/java/lang/reflect/Method.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="497" column="0" lean-forward="false" selection-start-line="497" selection-start-column="0" selection-end-line="497" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///opt/jdk1.8.0_151/jre/lib/rt.jar!/sun/reflect/DelegatingMethodAccessorImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.11/junit-4.11.jar!/org/junit/runner/JUnitCore.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="104" column="0" lean-forward="false" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///opt/jdk1.8.0_151/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="33" column="33" lean-forward="false" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/mx/unam/fi/bde/geometria/moro/pruebas/PuntoEnPoligonoLineaTestCase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="35" lean-forward="true" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+        <state relative-caret-position="177">
+          <caret line="79" column="84" lean-forward="true" selection-start-line="79" selection-start-column="84" selection-end-line="79" selection-end-column="84" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -829,8 +919,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/mx/unam/fi/bde/geometria/moro/PuntoEnPoligonoLinea.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="774">
-          <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+        <state relative-caret-position="447">
+          <caret line="46" column="91" lean-forward="false" selection-start-line="46" selection-start-column="91" selection-end-line="46" selection-end-column="91" />
           <folding />
         </state>
       </provider>
