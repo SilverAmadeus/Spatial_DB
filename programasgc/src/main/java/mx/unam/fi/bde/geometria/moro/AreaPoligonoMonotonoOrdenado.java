@@ -9,7 +9,7 @@ public class AreaPoligonoMonotonoOrdenado {
     private PuntoCadena [] puntos;
     private LinkedList<Punto> lista;
     private double sumaDet;
-    private int signoDet;
+    private int signoDet=1; //Asumir un det positivo en el primer triangulo
 
     /**
      * Constructor, inicializa la el arreglo <code>puntos </code> para guardar el índice original de
@@ -36,7 +36,9 @@ public class AreaPoligonoMonotonoOrdenado {
         puntos = new PuntoCadena[size];
         for (int i = 0; i < size; i++) {
             puntos[i] = new PuntoCadena(pList.get(i), i);
+            System.out.println(puntos[i]);
         }
+        System.out.println("Rolen POCKS");
     }
 
     /**
@@ -49,6 +51,9 @@ public class AreaPoligonoMonotonoOrdenado {
     public double area() {
         boolean opuesto;
         QuickSortSimplePuntos.sort(puntos);
+        for(int j=0; j<puntos.length;j++){
+            System.out.println(puntos[j]);
+        }
         // inicializa lista
         lista.add(puntos[0]);
         lista.add(puntos[1]);
@@ -103,19 +108,16 @@ public class AreaPoligonoMonotonoOrdenado {
 
             det = determinante(ultimo, penultimo, punto);
             //No se detecta triangulo
-            if (det == 0){
+            if (det == 0){ // Signo determinante NO se cambia cuando es cero
                 break;
             }//Si la lista es mayor que 2 todavia seguir procesando
-            if ((det > 0)){
+            if ((det * signoDet) > 0.0){ //SI los signos son los mismos
                 sumaDet += Math.abs(det);
                 lista.getLast(); // pop()
             }
-            if ((det < 0)){
-                //!!!!Se debe checar el signoDet? D:
+            if ((det * signoDet) < 0.0){
+                break;
             }
-
-
-
         }
         // se agrega p a la lista
         lista.add(punto);
@@ -137,6 +139,7 @@ public class AreaPoligonoMonotonoOrdenado {
         pULtimo = (PuntoCadena)lista.peekLast(); //No sacar el elemento
         pSiguiente = puntos[indexP];
         result  = Math.abs(pULtimo.index-pSiguiente.index);
+        //System.out.println(pULtimo+"-"+pSiguiente+"="+result);
         if (result == 1){
             return true;
         }else{
