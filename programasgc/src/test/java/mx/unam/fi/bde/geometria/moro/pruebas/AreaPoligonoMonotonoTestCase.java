@@ -19,7 +19,7 @@ public class AreaPoligonoMonotonoTestCase {
     public void setup() {
         // poligono 1
         pl1 = new Poligono();
-        List<Punto> puntos;
+          List<Punto> puntos;
         puntos = new ArrayList<>();
         puntos.add(new Punto(1, 4));
         puntos.add(new Punto(3, 1));
@@ -38,7 +38,7 @@ public class AreaPoligonoMonotonoTestCase {
         puntos.add(new Punto(1, 4));
         pl1.setPuntos(puntos);
 
-        // poligono 2
+//        // poligono 2
         pl2 = new Poligono();
         puntos = new ArrayList<>();
         puntos.add(new Punto(12, 3));
@@ -88,13 +88,13 @@ public class AreaPoligonoMonotonoTestCase {
         Assert.assertEquals(new Double(110), new Double(area));
 
         // poligono 2
-//        ap = new AreaPoligonoMonotonoOrdenado(pl2);
-  //      area = ap.area();
-    //    Assert.assertEquals(new Double(39.5), new Double(area));
+        ap = new AreaPoligonoMonotonoOrdenado(pl2);
+        area = ap.area();
+        Assert.assertEquals(new Double(39.5), new Double(area));
 
         // poligono 3
-//        ap = new AreaPoligonoMonotonoOrdenado(pl3);
-  //      area = ap.area();
-    //    Assert.assertEquals(new Double(38), new Double(area));
+        ap = new AreaPoligonoMonotonoOrdenado(pl3);
+        area = ap.area();
+        Assert.assertEquals(new Double(38), new Double(area));
     }
 }
