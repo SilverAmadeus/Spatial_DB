@@ -36,9 +36,7 @@ public class AreaPoligonoMonotonoOrdenado {
         puntos = new PuntoCadena[size];
         for (int i = 0; i < size; i++) {
             puntos[i] = new PuntoCadena(pList.get(i), i);
-            System.out.println(puntos[i]);
         }
-        System.out.println("Rolen POCKS");
     }
 
     /**
