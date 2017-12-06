@@ -129,7 +129,7 @@ STATIC_URL = '/static/'
 LEAFLET_CONFIG = {
     'DEFAULT_CENTER': (19.43, -99.13),
     'DEFAULT_ZOOM': 12,
-    'MIN_ZOOM': 12,
+    'MIN_ZOOM': 11,
     'ATTRIBUTION_PREFIX': 'UNAM: Facultad de Ingenieria 2017',
 
 }
