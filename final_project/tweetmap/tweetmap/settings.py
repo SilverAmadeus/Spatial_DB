@@ -37,7 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'main_app'
+    'django.contrib.gis',
+    'leaflet',
+    'main_app',
 ]
 
 MIDDLEWARE = [
@@ -76,8 +78,12 @@ WSGI_APPLICATION = 'tweetmap.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.contrib.gis.db.backends.postgis',
+        'NAME': 'tweetmap',
+        'USER': 'tweetmap',
+        'HOST': 'localhost',
+        'PASSWORD': 'tweetmap',
+        'PORT': '5432',
     }
 }
 
@@ -119,3 +125,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+LEAFLET_CONFIG = {
+    'DEFAULT_CENTER': (19.43, -99.13),
+    'DEFAULT_ZOOM': 12,
+    'MIN_ZOOM': 12,
+    'ATTRIBUTION_PREFIX': 'UNAM: Facultad de Ingenieria 2017',
+
+}
