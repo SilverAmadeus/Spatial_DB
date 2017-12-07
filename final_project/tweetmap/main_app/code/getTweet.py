@@ -62,7 +62,7 @@ if __name__ == '__main__':
                        result_type="recent",
                        #place_type='city',
                        languages=[opts.lang],
-                       geocode="19.4326068,-99.135399,30km").items(opts.nitems):
+                       geocode="19.4284700,-99.1276600,15km").items(opts.nitems):
         if tweet.place != None:
             tweet_list = []
             jtweet = json.loads(json.dumps(tweet._json))
