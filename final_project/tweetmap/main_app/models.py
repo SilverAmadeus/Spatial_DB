@@ -11,7 +11,7 @@ class Tweet(models.Model):
 	location = models.PointField(srid=4326)
 
 	def __str__(self):
-		template = '{0.user} {0.text}'
+		template = '{0.user} {0.text} {0.location}'
 		return template.format(self)
 
 
@@ -212,4 +212,4 @@ class MxDistrito(models.Model):
     geom = models.MultiPolygonField(srid=4326)
 
     def __str__(self):
-        return 'entidad: %s' % self.entidad
+        return 'Entidad: %s' % self.entidad
