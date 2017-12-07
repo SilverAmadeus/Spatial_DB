@@ -6,6 +6,7 @@ from django.contrib.gis.geos import GEOSGeometry
 
 
 class Tweet(models.Model):
+	category = models.FloatField()
 	user = models.CharField(max_length=50, null=False)
 	text = models.TextField(max_length=280, null=False)
 	location = models.PointField(srid=4326)
